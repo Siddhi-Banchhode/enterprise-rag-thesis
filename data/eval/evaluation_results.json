@@ -1,0 +1,713 @@
+{
+  "config": {
+    "top_k": 5,
+    "top_n": 3,
+    "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+    "mode": "retrieval_only",
+    "n_samples": 37,
+    "n_valid": 37
+  },
+  "summary": {
+    "overall": {
+      "precision_at_k": 0.5514,
+      "recall_at_k": 0.4375,
+      "f1_at_k": 0.4225,
+      "hit_at_1": 0.5676,
+      "mrr": 0.6707,
+      "avg_latency_sec": 0.3513,
+      "n_samples": 37
+    },
+    "per_dataset": {
+      "CUAD": {
+        "precision_at_k": 0.8,
+        "recall_at_k": 0.3844,
+        "f1_at_k": 0.5045,
+        "hit_at_1": 0.85,
+        "mrr": 0.8601,
+        "n_samples": 20
+      },
+      "pdfQA": {
+        "precision_at_k": 0.2588,
+        "recall_at_k": 0.5,
+        "f1_at_k": 0.3261,
+        "hit_at_1": 0.2353,
+        "mrr": 0.448,
+        "n_samples": 17
+      }
+    },
+    "per_category": {
+      "financial": {
+        "f1_at_k": 0.1845,
+        "mrr": 0.2748,
+        "n_samples": 8
+      },
+      "scientific": {
+        "f1_at_k": 0.3333,
+        "mrr": 0.3333,
+        "n_samples": 3
+      },
+      "legal": {
+        "f1_at_k": 0.5045,
+        "mrr": 0.8601,
+        "n_samples": 20
+      },
+      "esg": {
+        "f1_at_k": 0.5112,
+        "mrr": 0.7361,
+        "n_samples": 6
+      }
+    }
+  },
+  "results": [
+    {
+      "question": "What was Apple's total net sales in fiscal year 2022?",
+      "reference": "394,328",
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.3333,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 1.858,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "financial"
+    },
+    {
+      "question": "What was Netflix's total revenue in 2020?",
+      "reference": "24,996",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.317,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_NETFLIX_2020_10K.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "financial"
+    },
+    {
+      "question": "What was Walmart's net sales in fiscal year 2017?",
+      "reference": "481,317",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.269,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "financial"
+    },
+    {
+      "question": "What were Apple's services revenue in fiscal year 2022?",
+      "reference": "78,129",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.266,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "financial"
+    },
+    {
+      "question": "What was Apple's net income in fiscal year 2022?",
+      "reference": "99,803",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.233,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "financial"
+    },
+    {
+      "question": "What was Citigroup's total revenues net of interest expense in 2016?",
+      "reference": "77,219",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0556,
+      "latency_sec": 0.204,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinQA_C_2016.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "financial"
+    },
+    {
+      "question": "What was Netflix's net income in 2020?",
+      "reference": "2,761",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.205,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_NETFLIX_2020_10K.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "financial"
+    },
+    {
+      "question": "What was Ralph Lauren total revenues in 2014?",
+      "reference": "revenue",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.1429,
+      "latency_sec": 0.218,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinQA_RL_2014.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "financial"
+    },
+    {
+      "question": "What net zero target year does BP mention in their sustainability report?",
+      "reference": "2050",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 0.0,
+      "mrr": 1.0,
+      "latency_sec": 0.16,
+      "num_candidates": 18,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "esg"
+    },
+    {
+      "question": "What carbon neutrality goal does PWC China reference in their ESG report?",
+      "reference": "2060",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.1667,
+      "latency_sec": 0.183,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimRetrieve_PWC China ESG Report 2023.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "esg"
+    },
+    {
+      "question": "What sustainability reporting framework does AstraZeneca follow?",
+      "reference": "GRI",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.137,
+      "num_candidates": 16,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimRetrieve_AstraZeneca Sustainability Report 2023.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "esg"
+    },
+    {
+      "question": "What environmental objectives does BASF report on in 2023?",
+      "reference": "climate change",
+      "precision_at_k": 0.2,
+      "recall_at_k": 0.5,
+      "f1_at_k": 0.2857,
+      "hit_at_1": 0.0,
+      "mrr": 0.25,
+      "latency_sec": 0.175,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "esg"
+    },
+    {
+      "question": "What is Google's water goal in their 2024 environmental report?",
+      "reference": "water",
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.8889,
+      "hit_at_1": 0.0,
+      "mrr": 1.0,
+      "latency_sec": 0.158,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimateFinanceBench_google-2024-environmental-report.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "esg"
+    },
+    {
+      "question": "What renewable energy commitment does Schneider Electric mention?",
+      "reference": "renewable",
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.75,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.153,
+      "num_candidates": 17,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimRetrieve_Schneider Sustainability Report.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "esg"
+    },
+    {
+      "question": "What is the main task addressed in the PaperTab research paper?",
+      "reference": "table",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.168,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimRetrieve_Schneider Sustainability Report.pdf",
+        "PaperTab_1611.00514.pdf",
+        "ClimateFinanceBench_BASF_Report_2023.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "scientific"
+    },
+    {
+      "question": "What embedding approach does PaperTab propose for table retrieval?",
+      "reference": "BERT",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.168,
+      "num_candidates": 18,
+      "num_reranked": 3,
+      "top_sources": [
+        "PaperTab_1909.00105.pdf",
+        "PaperTab_1909.01958.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "scientific"
+    },
+    {
+      "question": "What dataset does the climate finance benchmark paper evaluate on?",
+      "reference": "climate",
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "f1_at_k": 1.0,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.175,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf",
+        "ClimateFinanceBench_google-2024-environmental-report.pdf"
+      ],
+      "dataset": "pdfQA",
+      "category": "scientific"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Document Name\" that should be reviewed by a lawyer. Details: The name of the contract",
+      "reference": "DISTRIBUTOR AGREEMENT",
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.5,
+      "f1_at_k": 0.5455,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.245,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinQA_C_2016.pdf",
+        "FinQA_RL_2014.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Parties\" that should be reviewed by a lawyer. Details: The two or more parties who signed the contract",
+      "reference": "Distributor",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.541,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Parties\" that should be reviewed by a lawyer. Details: The two or more parties who signed the contract",
+      "reference": "Electric City of Illinois L.L.C.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.2,
+      "f1_at_k": 0.3333,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.579,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Parties\" that should be reviewed by a lawyer. Details: The two or more parties who signed the contract",
+      "reference": "Electric City of Illinois LLC",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.2,
+      "f1_at_k": 0.3333,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.519,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Parties\" that should be reviewed by a lawyer. Details: The two or more parties who signed the contract",
+      "reference": "Company",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.1429,
+      "latency_sec": 0.515,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Parties\" that should be reviewed by a lawyer. Details: The two or more parties who signed the contract",
+      "reference": "Electric City Corp.",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0588,
+      "latency_sec": 0.507,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Agreement Date\" that should be reviewed by a lawyer. Details: The date of the contract",
+      "reference": "7th day of September, 1999.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.4,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.347,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinQA_RL_2014.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Effective Date\" that should be reviewed by a lawyer. Details: The date when the contract is effective",
+      "reference": "Unless  earlier   terminated   otherwise  provided                   therein,  this  Agreement,  subject to the  commencement  date                   established  in Section 1.3,  shall be effective  immediately.",
+      "precision_at_k": 0.8,
+      "recall_at_k": 0.4762,
+      "f1_at_k": 0.597,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.35,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinQA_RL_2014.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Effective Date\" that should be reviewed by a lawyer. Details: The date when the contract is effective",
+      "reference": "The term of this  Agreement  shall be ten (10)                            years (the \"Term\")  which shall  commence on the date                            upon which the Company  delivers to  Distributor  the                            last Sample, as defined  hereinafter.",
+      "precision_at_k": 0.8,
+      "recall_at_k": 0.5385,
+      "f1_at_k": 0.6437,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.336,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinQA_RL_2014.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details: On what date will the contract's initial term expire?",
+      "reference": "The term of this  Agreement  shall be ten (10)                            years (the \"Term\")  which shall  commence on the date                            upon which the Company  delivers to  Distributor  the                            last Sample, as defined  hereinafter.",
+      "precision_at_k": 0.8,
+      "recall_at_k": 0.3846,
+      "f1_at_k": 0.5195,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.377,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinQA_RL_2014.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Renewal Term\" that should be reviewed by a lawyer. Details: What is the renewal term after the initial term expires? This includes automatic extensions and unilateral extensions with prior notice.",
+      "reference": "If Distributor                            complies with all of the terms of this Agreement, the                            Agreement  shall be  renewable on an annual basis for                            one (1) year terms for up to  another  ten (10) years                            on the same terms and conditions as set forth herein.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.4,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.421,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: Which state/country's law governs the interpretation of the contract?",
+      "reference": "This Agreement is to be construed according to the laws          of the State of Illinois.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.8333,
+      "f1_at_k": 0.9091,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.262,
+      "num_candidates": 18,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Exclusivity\" that should be reviewed by a lawyer. Details: Is there an exclusive dealing\u00a0 commitment with the counterparty? This includes a commitment to procure all \u201crequirements\u201d from one party of certain technology, goods, or services or a prohibition on licensing or selling technology, goods or services to third parties, or a prohibition on\u00a0 collaborating or working with other parties), whether during the contract or\u00a0 after the contract ends (or both).",
+      "reference": "The Company appoints the Distributor as an  exclusive  distributor  of Products in the Market,  subject to the terms and conditions of this Agreement.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.6667,
+      "f1_at_k": 0.8,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.414,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "FinQA_RL_2014.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Exclusivity\" that should be reviewed by a lawyer. Details: Is there an exclusive dealing\u00a0 commitment with the counterparty? This includes a commitment to procure all \u201crequirements\u201d from one party of certain technology, goods, or services or a prohibition on licensing or selling technology, goods or services to third parties, or a prohibition on\u00a0 collaborating or working with other parties), whether during the contract or\u00a0 after the contract ends (or both).",
+      "reference": "Company  hereby   appoints                            Distributor as Company's exclusive distributor within                            the Market and grants to  Distributor  the  exclusive                            right  to sell and  distribute  Products  within  the                            Market,   and   Distributor   hereby   accepts   such                            appointment  and such grant,  in accordance  with the                            terms and conditions of this  Agreement.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.4333,
+      "f1_at_k": 0.6046,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.412,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "FinQA_RL_2014.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Exclusivity\" that should be reviewed by a lawyer. Details: Is there an exclusive dealing\u00a0 commitment with the counterparty? This includes a commitment to procure all \u201crequirements\u201d from one party of certain technology, goods, or services or a prohibition on licensing or selling technology, goods or services to third parties, or a prohibition on\u00a0 collaborating or working with other parties), whether during the contract or\u00a0 after the contract ends (or both).",
+      "reference": "The  Distributor  shall  not order or                   purchase Products from any source other than the Company.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.5714,
+      "f1_at_k": 0.7272,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.393,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "FinQA_RL_2014.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"No-Solicit Of Customers\" that should be reviewed by a lawyer. Details: Is a party restricted from contracting or soliciting customers or partners of the counterparty, whether during the contract or after the contract ends (or both)?",
+      "reference": "Term of the  Agreement  and for a period of  eighteen\n\n\n\n\n\n                           (18) months thereafter,  nor will Distributor solicit                            any  customer  or  potential  customer  of Company to                            purchase a competitive product during that period.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.4286,
+      "f1_at_k": 0.6,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.281,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"No-Solicit Of Customers\" that should be reviewed by a lawyer. Details: Is a party restricted from contracting or soliciting customers or partners of the counterparty, whether during the contract or after the contract ends (or both)?",
+      "reference": "Distributor further agrees that it will not interfere                            with or  otherwise  disrupt  the  business  relations                            between the Company or nay of its  affiliates and any                            of their current or prospective customers,  suppliers                            or distributors, during the",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.4667,
+      "f1_at_k": 0.6364,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.277,
+      "num_candidates": 19,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"No-Solicit Of Employees\" that should be reviewed by a lawyer. Details: Is there a restriction on a party\u2019s soliciting or hiring employees and/or contractors from the\u00a0 counterparty, whether during the contract or after the contract ends (or both)?",
+      "reference": "During the Term of this Agreement and for a period of                            twelve (12) months  thereafter,  the  Distributor (on                            behalf of itself,  each of its affiliates and each of                            their respective representatives) agrees that it will                            not  directly  or  indirectly  solicit  or  hire  any                            executive,  managerial  or technical  employee of the                            Company or any of its affiliates.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.4146,
+      "f1_at_k": 0.5862,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.314,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Rofr/Rofo/Rofn\" that should be reviewed by a lawyer. Details: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?",
+      "reference": "Distributor  shall exercise its option to                   become  exclusive  Distributor of other Products or devices by                   serving  written  notification  on Company of its  election to                   become  exclusive  distributor  within  thirty  (30) days upon                   which  Company  informed  Distributor  in writing of Company's                   intention  to  introduce   other   Products  or  devices.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.3333,
+      "f1_at_k": 0.5,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.445,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_NETFLIX_2020_10K.pdf",
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    },
+    {
+      "question": "Highlight the parts (if any) of this contract related to \"Rofr/Rofo/Rofn\" that should be reviewed by a lawyer. Details: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?",
+      "reference": "Should Company  introduce  other products or                   devices as contemplated by recital paragraph \"A\",  Distributor                   shall  have  the  option  of  becoming   Company's   exclusive                   distributor  of such  other  Products  or  devices  within the                   Market.",
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.44,
+      "f1_at_k": 0.6111,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.416,
+      "num_candidates": 20,
+      "num_reranked": 3,
+      "top_sources": [
+        "FinanceBench_NETFLIX_2020_10K.pdf",
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "dataset": "CUAD",
+      "category": "legal"
+    }
+  ]
+}

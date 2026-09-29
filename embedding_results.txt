@@ -1,0 +1,240 @@
+
+
+================================================================================
+EMBEDDING MODEL ABLATION STUDY
+LegalBench-RAG CUAD
+================================================================================
+
+Experimental principle:
+Only the embedding model changes.
+All other retrieval and evaluation settings remain fixed.
+
+Loading CUAD benchmark...
+Full benchmark contains 4042 queries.
+Using first 50 queries for this screening experiment.
+50 queries over 5 contract files.
+
+Loading raw CUAD corpus...
+Loading 5 contract files referenced by the benchmark...
+Wrapping raw corpus text as Documents (source = exact benchmark file_path)...
+Chunking with YOUR existing chunker (size=2000, overlap=200)...
+✅ Created 133 chunks (size=2000, overlap=200)
+Created 133 chunks.
+
+
+================================================================================
+EMBEDDING MODEL EXPERIMENT: all-mpnet-base-v2
+================================================================================
+Model:          sentence-transformers/all-mpnet-base-v2
+BM25 weight:    0.0
+FAISS weight:   1.0
+Candidate K:    10
+Top K:          10
+Chunk size:     2000
+Chunk overlap:  200
+Queries:        50
+
+Loading embedding model:
+  sentence-transformers/all-mpnet-base-v2
+Embedding model loaded in 7.27 seconds.
+Building fresh FAISS index over 133 chunks...
+FAISS index built in 16.43 seconds.
+FAISS vectors: 133
+
+Building YOUR existing retriever...
+Retriever ready.
+
+Running retrieval over 50 queries...
+  ...10/50 queries done
+  ...20/50 queries done
+  ...30/50 queries done
+  ...40/50 queries done
+  ...50/50 queries done
+
+
+----------------------------------------------------------------------
+RESULT
+----------------------------------------------------------------------
+Embedding model:  all-mpnet-base-v2
+Precision@10: 0.017
+Recall@10:    0.663
+MAP@10:       0.337
+Skipped chunks:    0
+Model load time:   7.27s
+Index build time:  16.43s
+Retrieval time:    1.84s
+
+
+================================================================================
+EMBEDDING MODEL EXPERIMENT: bge-base-en-v1.5
+================================================================================
+Model:          BAAI/bge-base-en-v1.5
+BM25 weight:    0.0
+FAISS weight:   1.0
+Candidate K:    10
+Top K:          10
+Chunk size:     2000
+Chunk overlap:  200
+Queries:        50
+
+Loading embedding model:
+  BAAI/bge-base-en-v1.5
+Embedding model loaded in 1.91 seconds.
+Building fresh FAISS index over 133 chunks...
+FAISS index built in 14.80 seconds.
+FAISS vectors: 133
+
+Building YOUR existing retriever...
+Retriever ready.
+
+Running retrieval over 50 queries...
+  ...10/50 queries done
+  ...20/50 queries done
+  ...30/50 queries done
+  ...40/50 queries done
+  ...50/50 queries done
+
+
+----------------------------------------------------------------------
+RESULT
+----------------------------------------------------------------------
+Embedding model:  bge-base-en-v1.5
+Precision@10: 0.018
+Recall@10:    0.635
+MAP@10:       0.180
+Skipped chunks:    0
+Model load time:   1.91s
+Index build time:  14.80s
+Retrieval time:    1.65s
+
+
+================================================================================
+EMBEDDING MODEL EXPERIMENT: bge-large-en-v1.5
+================================================================================
+Model:          BAAI/bge-large-en-v1.5
+BM25 weight:    0.0
+FAISS weight:   1.0
+Candidate K:    10
+Top K:          10
+Chunk size:     2000
+Chunk overlap:  200
+Queries:        50
+
+Loading embedding model:
+  BAAI/bge-large-en-v1.5
+Embedding model loaded in 1.93 seconds.
+Building fresh FAISS index over 133 chunks...
+FAISS index built in 59.87 seconds.
+FAISS vectors: 133
+
+Building YOUR existing retriever...
+Retriever ready.
+
+Running retrieval over 50 queries...
+  ...10/50 queries done
+  ...20/50 queries done
+  ...30/50 queries done
+  ...40/50 queries done
+  ...50/50 queries done
+
+
+----------------------------------------------------------------------
+RESULT
+----------------------------------------------------------------------
+Embedding model:  bge-large-en-v1.5
+Precision@10: 0.015
+Recall@10:    0.575
+MAP@10:       0.198
+Skipped chunks:    0
+Model load time:   1.93s
+Index build time:  59.87s
+Retrieval time:    5.64s
+
+
+================================================================================
+EMBEDDING MODEL EXPERIMENT: e5-base-v2
+================================================================================
+Model:          intfloat/e5-base-v2
+BM25 weight:    0.0
+FAISS weight:   1.0
+Candidate K:    10
+Top K:          10
+Chunk size:     2000
+Chunk overlap:  200
+Queries:        50
+
+Loading embedding model:
+  intfloat/e5-base-v2
+Embedding model loaded in 1.94 seconds.
+Building fresh FAISS index over 133 chunks...
+FAISS index built in 15.25 seconds.
+FAISS vectors: 133
+
+Building YOUR existing retriever...
+Retriever ready.
+
+Running retrieval over 50 queries...
+  ...10/50 queries done
+  ...20/50 queries done
+  ...30/50 queries done
+  ...40/50 queries done
+  ...50/50 queries done
+
+
+----------------------------------------------------------------------
+RESULT
+----------------------------------------------------------------------
+Embedding model:  e5-base-v2
+Precision@10: 0.015
+Recall@10:    0.536
+MAP@10:       0.174
+Skipped chunks:    0
+Model load time:   1.94s
+Index build time:  15.25s
+Retrieval time:    1.71s
+
+
+
+==========================================================================================
+EMBEDDING MODEL ABLATION SUMMARY
+==========================================================================================
+Model                               P@10   Recall@10    MAP@10   Skipped
+------------------------------------------------------------------------------------------
+all-mpnet-base-v2                  0.017       0.663     0.337         0
+bge-base-en-v1.5                   0.018       0.635     0.180         0
+bge-large-en-v1.5                  0.015       0.575     0.198         0
+e5-base-v2                         0.015       0.536     0.174         0
+
+
+==========================================================================================
+BEST CONFIGURATION
+==========================================================================================
+Best embedding model: all-mpnet-base-v2
+MAP@10: 0.337
+Recall@10: 0.663
+Precision@10: 0.017
+
+
+==========================================================================================
+IMPROVEMENT OVER all-mpnet-base-v2 BASELINE
+==========================================================================================
+Baseline MAP@10: 0.337
+Best MAP@10:     0.337
+Absolute improvement: +0.000
+Relative improvement: +0.00%
+
+
+==========================================================================================
+RUNTIME SUMMARY
+==========================================================================================
+Model                                 Load   FAISS Build     Retrieval         Total
+------------------------------------------------------------------------------------------
+all-mpnet-base-v2                    7.27s        16.43s         1.84s        25.54s
+bge-base-en-v1.5                     1.91s        14.80s         1.65s        18.36s
+bge-large-en-v1.5                    1.93s        59.87s         5.64s        67.44s
+e5-base-v2                           1.94s        15.25s         1.71s        18.90s
+
+
+==========================================================================================
+EXPERIMENT COMPLETE
+==========================================================================================

@@ -1,0 +1,48 @@
+question,reference,answer,faithfulness,answer_relevancy,ragas_score,latency_sec
+What was Apple's total net sales in fiscal year 2022?,"Apple's total net sales in fiscal year 2022 were $394,328 million.","Apple's total net sales in fiscal year 2022 was $394,328 million. (Apple Inc. | CONSOLIDATED STATEMENTS OF OPERATIONS | Page 1)",1.0,0.8992,0.9496,15.77
+What is the net zero target year mentioned in the BP sustainability report?,BP aims to achieve net zero by 2050.,"The net zero target year mentioned is 2050 or sooner. (bp Sustainability Report 2023, page 22)",0.0,0.0,0.0,12.18
+What was Walmart's total revenue in fiscal year 2017?,"Walmart's net sales were $481,317 million in fiscal year 2017.","Walmart's total revenue in fiscal year 2017 was $485,873 million. (Table of ContentsFive-Year Financial Summary, page 1)",0.0,0.0,0.0,7.74
+What was Netflix's total revenue in 2020?,"24,996","Netflix's total U.S. revenues for the year ended December 31, 2020, were $10.8 billion. (Page 50)",1.0,0.8991,0.9496,59.13
+What was Walmart's net sales in fiscal year 2017?,"481,317",I cannot find this information in the provided documents.,0.0,0.2748,0.1374,65.52
+What were Apple's services revenue in fiscal year 2022?,"78,129","Apple's services revenue in fiscal year 2022 was $78,129 million.
+Source: Note 2 – Revenue, page 1; CONSOLIDATED STATEMENTS OF OPERATIONS, page 1",1.0,0.9608,0.9804,63.54
+What was Apple's net income in fiscal year 2022?,"99,803","Apple's net income in fiscal year 2022 was $99,803 million.
+Source: Apple Inc. CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME, page 1",1.0,0.9162,0.9581,68.8
+What was Citigroup's total revenues net of interest expense in 2016?,"77,219","Citigroup's total revenues net of interest expense in 2016 was $66,023 million. (Source: Page 128)",1.0,0.9109,0.9555,58.62
+What was Netflix's net income in 2020?,"2,761",I cannot find this information in the provided documents.,0.0,0.1725,0.0862,61.39
+What was Ralph Lauren total revenues in 2014?,revenue,I cannot find this information in the provided documents.,0.0,0.2071,0.1036,59.72
+What net zero target year does BP mention in their sustainability report?,2050,"BP mentions 2050 or sooner as a net zero target year (bp Sustainability Report 2023, page 22). They also mention a 2025 target and a 2030 aim within their net zero targets and aims (bp Sustainability Report 2023, page 22).",1.0,0.8505,0.9253,76.47
+What carbon neutrality goal does PWC China reference in their ESG report?,2060,"PwC China has made a global commitment to achieve net zero with 2030 goals. (PwC China ESG Report, page not specified in context)",0.8,0.7728,0.7864,62.97
+What sustainability reporting framework does AstraZeneca follow?,GRI,AstraZeneca's sustainability reporting is with reference to the GRI Standards. (Source: Page 64),1.0,0.9161,0.9581,63.65
+What environmental objectives does BASF report on in 2023?,climate change,BASF reports on the climate change mitigation environmental objective and the pollution prevention and control environmental objective in 2023. (BASF Report 2023 Combined Management’s Report – E.U. Taxonomy 162),1.0,0.8092,0.9046,70.74
+What is Google's water goal in their 2024 environmental report?,water,"To achieve our water replenishment target, Google is channeling ongoing investments into projects located within the watersheds where they operate (Google's 2024 Environmental Report, page 12).",1.0,0.7566,0.8783,65.86
+What renewable energy commitment does Schneider Electric mention?,renewable,"Schneider Electric committed to sourcing 100% renewable electricity by 2030, having joined Renewable Energy 100 (RE100) in 2017. (Schneider Electric 2022 Sustainable Development Report, page 95)",1.0,0.8554,0.9277,67.36
+What is the main task addressed in the PaperTab research paper?,table,I cannot find this information in the provided documents.,1.0,0.1654,0.5827,62.22
+What embedding approach does PaperTab propose for table retrieval?,BERT,I cannot find this information in the provided documents.,0.0,0.0721,0.036,66.21
+What dataset does the climate finance benchmark paper evaluate on?,climate,I cannot find this information in the provided documents.,0.0,0.1582,0.0791,69.04
+We want to calculate a financial metric. Please help us compute it by basing your answers off of the statement of income and the statement of cash flows. Here's the question: what is the FY2015 unadjusted EBITDA % margin for Netflix? Calculate unadjusted EBITDA using unadjusted operating income and D&A (from cash flow statement).,5.4%,I cannot find this information in the provided documents.,0.0,0.1261,0.063,55.79
+What is Netflix's year end FY2017 total current liabilities (in USD millions)? Base your judgments on the information provided primarily in the balance sheet.,$5466.00,I cannot find this information in the provided documents.,0.0,0.173,0.0865,60.14
+What is FY2018 days payable outstanding (DPO) for Walmart? DPO is defined as: 365 * (average accounts payable between FY2017 and FY2018) / (FY2018 COGS + change in inventory between FY2017 and FY2018). Round your answer to two decimal places. Please base your judgments on the information provided primarily in the statement of financial position and the P&L statement.,42.69,I cannot find this information in the provided documents.,0.0,0.1635,0.0818,68.95
+"Based on the information provided primarily in the statement of income, what is the FY2018 - FY2019 change in unadjusted operating income % margin for Walmart? Answer in units of percents and round to one decimal place.",0.2%,"To determine the FY2018 - FY2019 change in unadjusted operating income % margin, we first need to identify the net sales and operating income for both fiscal years.
+
+Based on the ""Percentage change in net sales from previous fiscal year"" data, the columns in the main table represent the following fiscal years from left to right: 2022, 2021, 2020, 2019, and 2018.
+
+From the provided context:
+**For FY2019:**
+*   Net sales: $473,076 (Context)
+*   Operating income: $26,872 (Context)
+
+**For FY2018:**
+*   Net sales: $465,604 (Context)
+*   Operating income: $27,725 (Context)
+
+Now, calculate the operating income % margin for each year:
+*   **FY2019 Operating Income % Margin:**
+    ($26,872 / $473,076) * 100 = 5.6802% (Context)
+*   **FY2018 Operating Income % Margin:**
+    ($27,725 / $465,604) * 100 = 5.9546% (Context)
+
+Finally, calculate the change from FY2018 to FY2019 (FY2019 Margin - FY2018 Margin):
+*   Change = 5.6802% - 5.9546% = -0.2744%
+
+Rounding to one decimal place, the change is **-0.3%**.",1.0,0.7798,0.8899,98.76

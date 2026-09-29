@@ -1,0 +1,5 @@
+config,label,precision_at_k,recall_at_k,f1_at_k,hit_at_1,mrr,avg_latency_sec,n_samples
+bm25_only,Config 1 — BM25 Only,0.19,0.35,0.2313,0.15,0.2142,0.025,20
+faiss_only,Config 2 — FAISS Dense Only,0.23,0.475,0.2972,0.45,0.4667,0.0685,20
+hybrid_no_reranker,Config 3 — Hybrid (no reranker),0.22,0.475,0.2883,0.3,0.3875,0.0549,20
+full_system,Config 4 — Full System (YOUR SYSTEM),0.3,0.525,0.365,0.15,0.3417,0.2486,20

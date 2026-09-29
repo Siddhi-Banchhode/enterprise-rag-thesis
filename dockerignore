@@ -1,0 +1,36 @@
+# .dockerignore — exclude large/unnecessary files from Docker build context
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+venv_eval/
+.venv/
+
+# Large dataset files (not needed in container)
+data/datasets/
+data/pdfs/*.pdf
+
+# Evaluation outputs (generated at runtime)
+data/eval/
+
+# Dev tools
+.git/
+.gitignore
+notebooks/
+logs/
+tests/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Secrets (always exclude)
+.env

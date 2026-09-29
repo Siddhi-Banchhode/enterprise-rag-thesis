@@ -1,0 +1,43 @@
+dataset,category,question,reference,precision_at_k,recall_at_k,f1_at_k,hit_at_1,mrr,latency_sec
+pdfQA,financial,What was Apple's total net sales in fiscal year 2022?,"394,328",0.2,1.0,0.3333,1.0,0.5,3.37
+pdfQA,financial,What was Netflix's total revenue in 2020?,"24,996",0.0,0.0,0.0,0.0,0.0,1.958
+pdfQA,financial,What was Walmart's net sales in fiscal year 2017?,"481,317",0.0,0.0,0.0,0.0,0.0,0.645
+pdfQA,financial,What were Apple's services revenue in fiscal year 2022?,"78,129",0.4,1.0,0.5714,0.0,0.5,0.63
+pdfQA,financial,What was Apple's net income in fiscal year 2022?,"99,803",0.4,1.0,0.5714,1.0,1.0,0.868
+pdfQA,financial,What was Citigroup's total revenues net of interest expense in 2016?,"77,219",0.0,0.0,0.0,0.0,0.0556,0.712
+pdfQA,financial,What was Netflix's net income in 2020?,"2,761",0.0,0.0,0.0,0.0,0.0,0.689
+pdfQA,financial,What was Ralph Lauren total revenues in 2014?,revenue,0.0,0.0,0.0,0.0,0.1429,1.119
+pdfQA,esg,What net zero target year does BP mention in their sustainability report?,2050,0.4,1.0,0.5714,1.0,1.0,1.079
+pdfQA,esg,What carbon neutrality goal does PWC China reference in their ESG report?,2060,0.0,0.0,0.0,0.0,0.1667,0.692
+pdfQA,esg,What sustainability reporting framework does AstraZeneca follow?,GRI,0.4,1.0,0.5714,0.0,1.0,0.524
+pdfQA,esg,What environmental objectives does BASF report on in 2023?,climate change,0.2,0.5,0.2857,0.0,0.25,0.524
+pdfQA,esg,What is Google's water goal in their 2024 environmental report?,water,0.8,1.0,0.8889,0.0,1.0,0.509
+pdfQA,esg,What renewable energy commitment does Schneider Electric mention?,renewable,0.6,1.0,0.75,1.0,1.0,0.511
+pdfQA,scientific,What is the main task addressed in the PaperTab research paper?,table,0.0,0.0,0.0,0.0,0.0,0.527
+pdfQA,scientific,What embedding approach does PaperTab propose for table retrieval?,BERT,0.0,0.0,0.0,0.0,0.0,0.591
+pdfQA,scientific,What dataset does the climate finance benchmark paper evaluate on?,climate,1.0,1.0,1.0,0.0,1.0,0.59
+FinanceBench,financial,We want to calculate a financial metric. Please help us compute it by basing your answers off of the statement of income and the statement of cash flows. Here's the question: what is the FY2015 unadjusted EBITDA % margin for Netflix? Calculate unadjusted EBITDA using unadjusted operating income and D&A (from cash flow statement).,5.4%,0.0,0.0,0.0,0.0,0.0,1.02
+FinanceBench,financial,What is Netflix's year end FY2017 total current liabilities (in USD millions)? Base your judgments on the information provided primarily in the balance sheet.,$5466.00,0.0,0.0,0.0,0.0,0.0,1.087
+FinanceBench,financial,What is FY2018 days payable outstanding (DPO) for Walmart? DPO is defined as: 365 * (average accounts payable between FY2017 and FY2018) / (FY2018 COGS + change in inventory between FY2017 and FY2018). Round your answer to two decimal places. Please base your judgments on the information provided primarily in the statement of financial position and the P&L statement.,42.69,0.0,0.0,0.0,0.0,0.0,1.027
+FinanceBench,financial,"Based on the information provided primarily in the statement of income, what is the FY2018 - FY2019 change in unadjusted operating income % margin for Walmart? Answer in units of percents and round to one decimal place.",0.2%,0.0,0.0,0.0,0.0,0.0,0.899
+FinanceBench,financial,What is the FY2018 - FY2020 3 year average unadjusted EBITDA % margin for Walmart? Define unadjusted EBITDA as unadjusted operating income + depreciation and amortization from the cash flow statement. Answer in units of percents and round to one decimal place. Calculate what was asked by utilizing the line items clearly shown in the P&L statement and the cash flow statement.,6.2%,0.0,0.0,0.0,0.0,0.0,1.09
+SQuAD2,open_domain,When did Hamas drive the PLO out of Gaza?,2007,0.2,1.0,0.3333,1.0,1.0,0.947
+SQuAD2,open_domain,Where can Aeolian sand with a number of dunes be found?,plain Vistula terraces,0.4,1.0,0.5714,1.0,1.0,0.51
+SQuAD2,open_domain,What do ctenophores have that no other animals have?,colloblasts,0.0,0.0,0.0,0.0,0.0,0.395
+SQuAD2,open_domain,What is the name of the holding company for BSkyB?,Sky plc,0.4,1.0,0.5714,1.0,1.0,0.441
+SQuAD2,open_domain,Contracts must be designed to ensure what?,that each side is capable of performing the obligations set out,1.0,1.0,1.0,1.0,1.0,0.388
+SQuAD2,open_domain,What did the conflict galvanize Muslims around the world to do?,send aid and sometimes to go themselves to fight for their faith,1.0,0.9091,0.9524,1.0,1.0,0.398
+SQuAD2,open_domain,What entity owns V/Line?,Victorian Government,0.2,0.5,0.2857,1.0,1.0,0.446
+SQuAD2,open_domain,What historical figure was Jacksonville named after?,Andrew Jackson,0.2,0.5,0.2857,0.0,0.5,0.386
+SQuAD2,open_domain,What was the total number of homes Sky announced that had Sky+HD in March of 2012?,"4,222,000",0.0,0.0,0.0,0.0,0.0,0.443
+SQuAD2,open_domain,What are the three sources of European Union law?,"primary law, secondary law and supplementary law",0.8,1.0,0.8889,1.0,1.0,0.45
+SQuAD2,open_domain,France laid siege to Montpellier in what year?,1622,0.0,0.0,0.0,0.0,0.0,0.403
+SQuAD2,open_domain,How many women were employed in construction in 2011?,"828,000",0.2,1.0,0.3333,1.0,1.0,0.375
+SQuAD2,open_domain,What is the nature of the relationship between T-cells and vitamin D?,symbiotic relationship,0.2,1.0,0.3333,1.0,1.0,0.468
+SQuAD2,open_domain,How many major ice ages have occurred? ,six,0.2,1.0,0.3333,1.0,1.0,0.462
+SQuAD2,open_domain,What is restrained with a lever in the top of a boiler?,plug valve,0.4,1.0,0.5714,1.0,1.0,0.421
+SQuAD2,open_domain,What does the lobata have pair of?,lobes,0.4,1.0,0.5714,1.0,1.0,0.418
+SQuAD2,open_domain,How many refugees emigrated to the Dutch Republic?,"an estimated total of 75,000 to 100,000 people",1.0,0.875,0.9333,1.0,1.0,0.428
+SQuAD2,open_domain,Having existing utility lines marked lessens the likelihood of what?,damage,0.2,1.0,0.3333,1.0,1.0,0.448
+SQuAD2,open_domain,Who was the main proponent of the cellular theory of immunity?,Elie Metchnikoff,0.2,0.5,0.2857,1.0,1.0,0.46
+SQuAD2,open_domain,When did Prime Minister Wilson commit to some form of devolved legislature?,1974,0.2,1.0,0.3333,1.0,1.0,0.395

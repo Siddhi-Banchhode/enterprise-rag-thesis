@@ -1,0 +1,81 @@
+config,category,question,reference,precision_at_k,recall_at_k,f1_at_k,hit_at_1,mrr,latency_sec
+bm25_only,financial,What was Apple's total net sales in fiscal year 2022?,"394,328",0.0,0.0,0.0,0.0,0.0,0.029
+bm25_only,financial,What was Netflix's total revenue in 2020?,"24,996",0.0,0.0,0.0,0.0,0.0,0.019
+bm25_only,financial,What was Walmart's net sales in fiscal year 2017?,"481,317",0.0,0.0,0.0,0.0,0.0,0.023
+bm25_only,financial,What was Citigroup's total revenues net of interest expense in 2016?,"77,219",0.0,0.0,0.0,0.0,0.0,0.027
+bm25_only,financial,What were Apple's services revenue in fiscal year 2022?,"78,129",0.0,0.0,0.0,0.0,0.0,0.022
+bm25_only,financial,What was the net income reported by Netflix in 2020?,"2,761",0.0,0.0,0.0,0.0,0.0,0.025
+bm25_only,financial,What products revenue did Apple report in fiscal year 2022?,"316,199",0.0,0.0,0.0,0.0,0.0,0.024
+bm25_only,financial,What was the total revenue of Ralph Lauren in 2014?,revenue,0.0,0.0,0.0,0.0,0.0,0.026
+bm25_only,esg,What net zero target year does BP mention in their sustainability report?,2050,0.2,1.0,0.3333,0.0,0.2,0.029
+bm25_only,esg,What carbon neutrality goal does PWC China reference in their ESG report?,2060,0.0,0.0,0.0,0.0,0.0,0.03
+bm25_only,esg,What sustainability reporting framework does AstraZeneca follow?,GRI,0.4,1.0,0.5714,0.0,0.25,0.017
+bm25_only,esg,What environmental objectives does BASF report on in 2023?,climate change,0.6,1.0,0.75,1.0,1.0,0.023
+bm25_only,esg,What is Google's water goal in their 2024 environmental report?,water,0.8,1.0,0.8889,1.0,1.0,0.025
+bm25_only,esg,What renewable energy commitment does Schneider Electric mention?,renewable,1.0,1.0,1.0,1.0,1.0,0.019
+bm25_only,esg,What emissions target does AstraZeneca set for 2030?,carbon,0.2,1.0,0.3333,0.0,0.3333,0.02
+bm25_only,scientific,What embedding approach does the PaperTab paper propose for table retrieval?,BERT,0.0,0.0,0.0,0.0,0.0,0.028
+bm25_only,scientific,What is the main task addressed in the PaperTab research paper?,table,0.0,0.0,0.0,0.0,0.0,0.029
+bm25_only,scientific,What dataset does the climate finance benchmark paper use?,climate,0.6,1.0,0.75,0.0,0.5,0.022
+bm25_only,scientific,What method does the paper propose for scientific table understanding?,table,0.0,0.0,0.0,0.0,0.0,0.026
+bm25_only,financial,What is the primary business segment of Apple described in the 2022 annual report?,iPhone,0.0,0.0,0.0,0.0,0.0,0.036
+faiss_only,financial,What was Apple's total net sales in fiscal year 2022?,"394,328",0.2,1.0,0.3333,1.0,1.0,0.747
+faiss_only,financial,What was Netflix's total revenue in 2020?,"24,996",0.0,0.0,0.0,0.0,0.0,0.033
+faiss_only,financial,What was Walmart's net sales in fiscal year 2017?,"481,317",0.0,0.0,0.0,0.0,0.0,0.032
+faiss_only,financial,What was Citigroup's total revenues net of interest expense in 2016?,"77,219",0.0,0.0,0.0,0.0,0.0,0.037
+faiss_only,financial,What were Apple's services revenue in fiscal year 2022?,"78,129",0.4,1.0,0.5714,1.0,1.0,0.032
+faiss_only,financial,What was the net income reported by Netflix in 2020?,"2,761",0.0,0.0,0.0,0.0,0.0,0.031
+faiss_only,financial,What products revenue did Apple report in fiscal year 2022?,"316,199",0.2,1.0,0.3333,1.0,1.0,0.033
+faiss_only,financial,What was the total revenue of Ralph Lauren in 2014?,revenue,0.0,0.0,0.0,0.0,0.0,0.032
+faiss_only,esg,What net zero target year does BP mention in their sustainability report?,2050,0.6,1.0,0.75,1.0,1.0,0.034
+faiss_only,esg,What carbon neutrality goal does PWC China reference in their ESG report?,2060,0.0,0.0,0.0,0.0,0.0,0.035
+faiss_only,esg,What sustainability reporting framework does AstraZeneca follow?,GRI,0.4,1.0,0.5714,1.0,1.0,0.033
+faiss_only,esg,What environmental objectives does BASF report on in 2023?,climate change,0.2,0.5,0.2857,0.0,0.3333,0.032
+faiss_only,esg,What is Google's water goal in their 2024 environmental report?,water,0.8,1.0,0.8889,1.0,1.0,0.031
+faiss_only,esg,What renewable energy commitment does Schneider Electric mention?,renewable,0.6,1.0,0.75,1.0,1.0,0.032
+faiss_only,esg,What emissions target does AstraZeneca set for 2030?,carbon,0.4,1.0,0.5714,1.0,1.0,0.032
+faiss_only,scientific,What embedding approach does the PaperTab paper propose for table retrieval?,BERT,0.0,0.0,0.0,0.0,0.0,0.034
+faiss_only,scientific,What is the main task addressed in the PaperTab research paper?,table,0.0,0.0,0.0,0.0,0.0,0.031
+faiss_only,scientific,What dataset does the climate finance benchmark paper use?,climate,0.8,1.0,0.8889,1.0,1.0,0.036
+faiss_only,scientific,What method does the paper propose for scientific table understanding?,table,0.0,0.0,0.0,0.0,0.0,0.032
+faiss_only,financial,What is the primary business segment of Apple described in the 2022 annual report?,iPhone,0.0,0.0,0.0,0.0,0.0,0.032
+hybrid_no_reranker,financial,What was Apple's total net sales in fiscal year 2022?,"394,328",0.2,1.0,0.3333,0.0,0.5,0.057
+hybrid_no_reranker,financial,What was Netflix's total revenue in 2020?,"24,996",0.0,0.0,0.0,0.0,0.0,0.047
+hybrid_no_reranker,financial,What was Walmart's net sales in fiscal year 2017?,"481,317",0.0,0.0,0.0,0.0,0.0,0.053
+hybrid_no_reranker,financial,What was Citigroup's total revenues net of interest expense in 2016?,"77,219",0.0,0.0,0.0,0.0,0.0,0.057
+hybrid_no_reranker,financial,What were Apple's services revenue in fiscal year 2022?,"78,129",0.4,1.0,0.5714,0.0,0.5,0.052
+hybrid_no_reranker,financial,What was the net income reported by Netflix in 2020?,"2,761",0.0,0.0,0.0,0.0,0.0,0.055
+hybrid_no_reranker,financial,What products revenue did Apple report in fiscal year 2022?,"316,199",0.2,1.0,0.3333,1.0,1.0,0.054
+hybrid_no_reranker,financial,What was the total revenue of Ralph Lauren in 2014?,revenue,0.0,0.0,0.0,0.0,0.0,0.055
+hybrid_no_reranker,esg,What net zero target year does BP mention in their sustainability report?,2050,0.4,1.0,0.5714,1.0,1.0,0.06
+hybrid_no_reranker,esg,What carbon neutrality goal does PWC China reference in their ESG report?,2060,0.0,0.0,0.0,0.0,0.0,0.061
+hybrid_no_reranker,esg,What sustainability reporting framework does AstraZeneca follow?,GRI,0.4,1.0,0.5714,1.0,1.0,0.048
+hybrid_no_reranker,esg,What environmental objectives does BASF report on in 2023?,climate change,0.2,0.5,0.2857,0.0,0.25,0.053
+hybrid_no_reranker,esg,What is Google's water goal in their 2024 environmental report?,water,0.8,1.0,0.8889,1.0,1.0,0.055
+hybrid_no_reranker,esg,What renewable energy commitment does Schneider Electric mention?,renewable,0.6,1.0,0.75,1.0,1.0,0.051
+hybrid_no_reranker,esg,What emissions target does AstraZeneca set for 2030?,carbon,0.4,1.0,0.5714,0.0,0.5,0.051
+hybrid_no_reranker,scientific,What embedding approach does the PaperTab paper propose for table retrieval?,BERT,0.0,0.0,0.0,0.0,0.0,0.059
+hybrid_no_reranker,scientific,What is the main task addressed in the PaperTab research paper?,table,0.0,0.0,0.0,0.0,0.0,0.057
+hybrid_no_reranker,scientific,What dataset does the climate finance benchmark paper use?,climate,0.8,1.0,0.8889,1.0,1.0,0.051
+hybrid_no_reranker,scientific,What method does the paper propose for scientific table understanding?,table,0.0,0.0,0.0,0.0,0.0,0.055
+hybrid_no_reranker,financial,What is the primary business segment of Apple described in the 2022 annual report?,iPhone,0.0,0.0,0.0,0.0,0.0,0.066
+full_system,financial,What was Apple's total net sales in fiscal year 2022?,"394,328",0.3333,1.0,0.5,0.0,0.5,1.088
+full_system,financial,What was Netflix's total revenue in 2020?,"24,996",0.0,0.0,0.0,0.0,0.0,0.317
+full_system,financial,What was Walmart's net sales in fiscal year 2017?,"481,317",0.0,0.0,0.0,0.0,0.0,0.209
+full_system,financial,What was Citigroup's total revenues net of interest expense in 2016?,"77,219",0.0,0.0,0.0,0.0,0.0,0.194
+full_system,financial,What were Apple's services revenue in fiscal year 2022?,"78,129",0.3333,1.0,0.5,0.0,0.3333,0.181
+full_system,financial,What was the net income reported by Netflix in 2020?,"2,761",0.0,0.0,0.0,0.0,0.0,0.223
+full_system,financial,What products revenue did Apple report in fiscal year 2022?,"316,199",0.3333,1.0,0.5,0.0,0.5,0.252
+full_system,financial,What was the total revenue of Ralph Lauren in 2014?,revenue,0.0,0.0,0.0,0.0,0.0,0.21
+full_system,esg,What net zero target year does BP mention in their sustainability report?,2050,0.3333,1.0,0.5,0.0,0.5,0.164
+full_system,esg,What carbon neutrality goal does PWC China reference in their ESG report?,2060,0.3333,1.0,0.5,0.0,0.5,0.178
+full_system,esg,What sustainability reporting framework does AstraZeneca follow?,GRI,0.6667,1.0,0.8,1.0,1.0,0.137
+full_system,esg,What environmental objectives does BASF report on in 2023?,climate change,0.3333,0.5,0.4,0.0,0.5,0.241
+full_system,esg,What is Google's water goal in their 2024 environmental report?,water,0.6667,1.0,0.8,0.0,0.5,0.162
+full_system,esg,What renewable energy commitment does Schneider Electric mention?,renewable,1.0,1.0,1.0,1.0,1.0,0.164
+full_system,esg,What emissions target does AstraZeneca set for 2030?,carbon,0.6667,1.0,0.8,0.0,0.5,0.155
+full_system,scientific,What embedding approach does the PaperTab paper propose for table retrieval?,BERT,0.0,0.0,0.0,0.0,0.0,0.183
+full_system,scientific,What is the main task addressed in the PaperTab research paper?,table,0.0,0.0,0.0,0.0,0.0,0.178
+full_system,scientific,What dataset does the climate finance benchmark paper use?,climate,1.0,1.0,1.0,1.0,1.0,0.165
+full_system,scientific,What method does the paper propose for scientific table understanding?,table,0.0,0.0,0.0,0.0,0.0,0.199
+full_system,financial,What is the primary business segment of Apple described in the 2022 annual report?,iPhone,0.0,0.0,0.0,0.0,0.0,0.372

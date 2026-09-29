@@ -1,0 +1,350 @@
+{
+  "config": {
+    "top_k": 5,
+    "top_n": 3,
+    "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+    "llm_type": "gemini",
+    "n_valid": 23
+  },
+  "summary": {
+    "faithfulness": 0.5565,
+    "answer_relevancy": 0.5148,
+    "ragas_score": 0.5356,
+    "avg_latency_sec": 59.16,
+    "n_samples": 23
+  },
+  "results": [
+    {
+      "question": "What was Apple's total net sales in fiscal year 2022?",
+      "reference": "Apple's total net sales in fiscal year 2022 were $394,328 million.",
+      "answer": "Apple's total net sales in fiscal year 2022 was $394,328 million. (Apple Inc. | CONSOLIDATED STATEMENTS OF OPERATIONS | Page 1)",
+      "contexts": [
+        "Apple Inc.\nCONSOLIDATED STATEMENTS OF OPERATIONS\n(In millions, except number of shares which are reflected in thousands and per share amounts)\nYears ended\nSeptember 24,\n2022September 25,\n2021September 26,\n2020\nNet sales:\n Products $ 316,199 $ 297,392 $ 220,747 \n Services 78,129 68,425 53,768 \nTotal net sales 394,328 365,817 274,515 \nCost of sales:\n Products 201,471 192,266 151,286 \n Services 22,075 20,715 18,273 \nTotal cost of sales 223,546 212,981 169,559 \nGross margin 170,782 152,836 104,956",
+        "iPad\niPad net sales decreased during 2022 compared to 2021 due primarily to lower net sales of iPad Pro.\nWearables, Home and Accessories\nWearables, Home and Accessories net sales increased during 2022 compared to 2021 due primarily to higher net sales of Apple \nWatch and AirPods.\nServices\nServices net sales increased during 2022 compared to 2021 due primarily to higher net sales from advertising, cloud services \nand the App Store.\nApple Inc. | 2022 Form 10-K | 21",
+        "Apple Inc.\nCONSOLIDATED STATEMENTS OF SHAREHOLDERS\u2019 EQUITY\n(In millions, except per share amounts)\nYears ended\nSeptember 24,\n2022September 25,\n2021September 26,\n2020\nTotal shareholders\u2019 equity, beginning balances $ 63,090 $ 65,339 $ 90,488 \nCommon stock and additional paid-in capital:\nBeginning balances 57,365 50,779 45,174 \nCommon stock issued 1,175 1,105 880 \nCommon stock withheld related to net share settlement of equity \nawards (2,971) (2,627) (2,250)"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8992,
+      "ragas_score": 0.9496,
+      "latency_sec": 15.77
+    },
+    {
+      "question": "What is the net zero target year mentioned in the BP sustainability report?",
+      "reference": "BP aims to achieve net zero by 2050.",
+      "answer": "The net zero target year mentioned is 2050 or sooner. (bp Sustainability Report 2023, page 22)",
+      "contexts": [
+        "Our net zero targets and aims\nWe believe our ambition and aims, taken together, are consistent with the goals of the Paris Agreement. By setting a path that enables us to make a positive contribution, working to build and participate in many of the new net zero value chains the world will need, and by decarbonizing our own operations, our ambition and aims support the world\u2019s progress towards the goals of the Paris Agreement.\nThe bp Sustainability Report 2021 described our",
+        "2021 performance\n2023 performance\n2030 aim2025 target\n2050 or sooner2022 performance1% \n5%\nNet zero a15-20%2%2020 performance 2%\n3%3\nbp Sustainability Report 2023\n22\nGetting to \nnet zeroOur approach Improving people\u2019s lives Caring for our planet Engaging stakeholders Our reporting Introduction",
+        "Read more in the bp Net Zero Ambition \nProgress Update 2024 pages 7 and 20\n See the glossary on pages 59-61\nbp Sustainability Report 2023\n18\nGetting to \nnet zeroOur approach Improving people\u2019s lives Caring for our planet Engaging stakeholders Our reporting Introduction"
+      ],
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "ragas_score": 0.0,
+      "latency_sec": 12.18
+    },
+    {
+      "question": "What was Walmart's total revenue in fiscal year 2017?",
+      "reference": "Walmart's net sales were $481,317 million in fiscal year 2017.",
+      "answer": "Walmart's total revenue in fiscal year 2017 was $485,873 million. (Table of ContentsFive-Year Financial Summary, page 1)",
+      "contexts": [
+        "Table of ContentsFive-Year Financial Summary\nExhibit 13 Wal-Mart Stores, Inc.\n \n As of and for the Fiscal Years Ended January 31, (Amounts in millions, except per share and unit count data)\n 2017 2016 2015 2014 2013 Operating results\n Total revenues\n $485,873 $482,130 $485,651 $476,294 $468,651 Percentage change in total revenues from previous fiscal year\n 0.8 % (0.7 )% 2.0 % 1.6 % 5.0 %Net sales",
+        "lmart 3,079 3,773 3,034 3,757 13,643 Basic net income per common share attributable to Walmart\n 0.98 1.21 0.98 1.23 4.40 Diluted net income per common share attributable to Walmart \n(1) 0.98 1.21 0.98 1.22 4.38 \n \n Fiscal Year Ended January 31, 2016 \n Q1 Q2 Q3 Q4 Total Total revenues\n $114,826 $120,229 $117,408 $129,667 $482,130 Net sales\n 114,002 119,330 116,598 128,684 478,614 Cost of sales\n 86,483 90,056 87,446 96,999 360,984 Consolidated net income",
+        "Table of ContentsStock Performance Chart\nThis graph compares the cumu\nlative total shareholder return on Walmart's common stock during the five fiscal years ending with fiscal 2017 to the cumulative totalreturns on the S&P 500 Retailing Index \nand the S&P 500 Index. The comparison assumes $100 was invested on February 1, 2012, in shares of our common stockand in each of the indices shown and \nassumes that all of the dividends were reinvested.\n \nFiscal Years Ended January 31,"
+      ],
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "ragas_score": 0.0,
+      "latency_sec": 7.74
+    },
+    {
+      "question": "What sustainability reporting framework does AstraZeneca use?",
+      "reference": "AstraZeneca follows the GRI sustainability reporting framework.",
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 36.897955892s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 36\n}\n]"
+    },
+    {
+      "question": "What was Netflix's total revenue in 2020?",
+      "reference": "Netflix's total revenue in 2020 was $24,996 million.",
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 32.361485562s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 32\n}\n]"
+    },
+    {
+      "question": "What was Netflix's total revenue in 2020?",
+      "reference": "24,996",
+      "answer": "Netflix's total U.S. revenues for the year ended December 31, 2020, were $10.8 billion. (Page 50)",
+      "contexts": [
+        "Total U.S. revenues, inclusive of DVD revenues no\nt reported in the tables above, were $10.8 billion, $9.5 billion and $8.0 billion for the years endedDecember 31, 2020, 2019 and 2018, respectiv\nely. DVD revenues were $0.2 billion, $0.3 billion, and $0.4 billion for the years ended December 31, 2020, 2019 and2018, respectively.\n50",
+        "The Company\u2019s proportion of net sales by disaggregated revenue source was generally consistent for each reportable segment \nin Note 11, \u201cSegment Information and Geographic Data\u201d for 2022 , 2021 and 2020 , except in Greater China, where iPhone \nrevenue represented a moderately higher proportion of net sales in 2022 and 2021 .\nAs of September\u00a024, 2022 and September\u00a025, 2021 , the Company had total deferred revenue of $12.4 billion and $11.9\u00a0billion ,",
+        "included in this Annual Report (Form 10-K) of Netflix, Inc. for the year ended December 31, 2020./s/ Ernst & Young LLP\nSan Jose, California\nJanuary 28, 2021"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8991,
+      "ragas_score": 0.9496,
+      "latency_sec": 59.13
+    },
+    {
+      "question": "What was Walmart's net sales in fiscal year 2017?",
+      "reference": "481,317",
+      "answer": "I cannot find this information in the provided documents.",
+      "contexts": [
+        "377 372 368 Net sales for the Walmart Inter\nnational segment decreased $7.3 billion or 5.9% and $12.8 billion or 9.4% for fiscal 2017 and 2016 , respectively, when compar edto the previous fiscal ye\nar. For fiscal 2017 , the decrease in net sa les was due to the $11.0 billion of negative impact f rom fluctuations in currency exchange rates.Additionally, net sales for",
+        "Table of ContentsWalmart International Segment\n \n Fiscal Years Ended January 31, (Amounts in millions, except unit counts)\n 2017 2016 2015 Net sales\n $116,119 $123,408 $136,160 Percentage change from comparable period\n (5.9 )% (9.4 )% (0.3 )%Operating income\n $5,758 $5,346 $6,171 Operating income as a percentage of net sales\n 5.0 % 4.3 % 4.5 %Unit counts at period end\n 6,363 6,299 6,290 Retail square feet at period end\n 377 372 368 Net sales for the Walmart Inter",
+        "Table of ContentsWalmart U.S. Segment\n \n Fiscal Years Ended January 31, (Amounts in millions, except unit counts)\n 2017 2016 2015 Net sales\n $307,833 $298,378 $288,049 Percentage change from comparable period\n 3.2 %3.6 % 3.1 %Calendar comparable store sales increase\n 1.6 % 1.0 % 0.6 %Operating income\n $17,745 $19,087 $21,336 Operating income as a percentage of net sales\n 5.8 % 6.4 % 7.4 %Unit counts at period end\n 4,672 4,574 4,516 Retail square feet at period end"
+      ],
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.2748,
+      "ragas_score": 0.1374,
+      "latency_sec": 65.52
+    },
+    {
+      "question": "What were Apple's services revenue in fiscal year 2022?",
+      "reference": "78,129",
+      "answer": "Apple's services revenue in fiscal year 2022 was $78,129 million.\nSource: Note 2 \u2013 Revenue, page 1; CONSOLIDATED STATEMENTS OF OPERATIONS, page 1",
+      "contexts": [
+        "The Company\u2019s proportion of net sales by disaggregated revenue source was generally consistent for each reportable segment \nin Note 11, \u201cSegment Information and Geographic Data\u201d for 2022 , 2021 and 2020 , except in Greater China, where iPhone \nrevenue represented a moderately higher proportion of net sales in 2022 and 2021 .\nAs of September\u00a024, 2022 and September\u00a025, 2021 , the Company had total deferred revenue of $12.4 billion and $11.9\u00a0billion ,",
+        "Company does not include intercompany transfers between segments for management reporting purposes.\nNote 2 \u2013 Revenue\nNet sales disaggregated by significant products and services for 2022 , 2021 and 2020 were as follows (in millions):\n2022 2021 2020\niPhone (1)$ 205,489 $ 191,973 $ 137,781 \nMac (1) 40,177 35,190 28,622 \niPad (1) 29,292 31,862 23,724 \nWearables, Home and Accessories (1)(2) 41,241 38,367 30,620 \nServices (3) 78,129 68,425 53,768 \nTotal net sales (4)$ 394,328 $ 365,817 $ 274,515",
+        "Apple Inc.\nCONSOLIDATED STATEMENTS OF OPERATIONS\n(In millions, except number of shares which are reflected in thousands and per share amounts)\nYears ended\nSeptember 24,\n2022September 25,\n2021September 26,\n2020\nNet sales:\n Products $ 316,199 $ 297,392 $ 220,747 \n Services 78,129 68,425 53,768 \nTotal net sales 394,328 365,817 274,515 \nCost of sales:\n Products 201,471 192,266 151,286 \n Services 22,075 20,715 18,273 \nTotal cost of sales 223,546 212,981 169,559 \nGross margin 170,782 152,836 104,956"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9608,
+      "ragas_score": 0.9804,
+      "latency_sec": 63.54
+    },
+    {
+      "question": "What was Apple's net income in fiscal year 2022?",
+      "reference": "99,803",
+      "answer": "Apple's net income in fiscal year 2022 was $99,803 million.\nSource: Apple Inc. CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME, page 1",
+      "contexts": [
+        "Apple Inc.\nCONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME\n(In millions)\nYears ended\nSeptember 24,\n2022September 25,\n2021September 26,\n2020\nNet income $ 99,803 $ 94,680 $ 57,411 \nOther comprehensive income/(loss):\nChange in foreign currency translation, net of tax (1,511) 501 88 \nChange in unrealized gains/losses on derivative instruments, net of tax:\nChange in fair value of derivative instruments 3,212 32 79 \nAdjustment for net (gains)/losses realized and included in net",
+        "Apple Inc.\nCONSO LIDATED STATEMENTS OF CASH FLOWS\n(In millions)\nYears ended\nSeptember 24,\n2022September 25,\n2021September 26,\n2020\nCash, cash equivalents and restricted cash, beginning balances $ 35,929 $ 39,789 $ 50,224 \nOperating activities:\nNet income 99,803 94,680 57,411 \nAdjustments to reconcile net income to cash generated by operating activities:\nDepreciation and amortization 11,104 11,284 11,056 \nShare-based compensation expense 9,038 7,906 6,829",
+        "Apple Inc.\nCONSOLIDATED STATEMENTS OF OPERATIONS\n(In millions, except number of shares which are reflected in thousands and per share amounts)\nYears ended\nSeptember 24,\n2022September 25,\n2021September 26,\n2020\nNet sales:\n Products $ 316,199 $ 297,392 $ 220,747 \n Services 78,129 68,425 53,768 \nTotal net sales 394,328 365,817 274,515 \nCost of sales:\n Products 201,471 192,266 151,286 \n Services 22,075 20,715 18,273 \nTotal cost of sales 223,546 212,981 169,559 \nGross margin 170,782 152,836 104,956"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9162,
+      "ragas_score": 0.9581,
+      "latency_sec": 68.8
+    },
+    {
+      "question": "What was Citigroup's total revenues net of interest expense in 2016?",
+      "reference": "77,219",
+      "answer": "Citigroup's total revenues net of interest expense in 2016 was $66,023 million. (Source: Page 128)",
+      "contexts": [
+        "approximately $3.9 billion of revenues, $3.2 billion of expenses and net income of $600 million in 2016. For additional information, \nsee \u201cCitigroup Segments\u201d above and \u201cCiti Holdings\u201d below .\nIn millions of dollars except as otherwise noted 2016 2015 2014% Change\u00a0\n\u00a02016 vs. 2015% Change\u00a0\n\u00a02015 vs. 2014\nNet interest revenue $ 43,066 $ 42,173 $ 42,436 2% (1)%\nNon-interest revenue 22,957 25,221 25,475 (9) (1)\nTotal revenues, net of interest expense $ 66,023 $ 67,394 $ 67,911 (2)% (1)%",
+        "129CONSOLIDA TED FINANCIAL STATEMENTS\nCONSOLIDATED STATEMENT OF INCOME Citigroup\u00a0Inc. and Subsidiaries\nYears ended December 31,\nIn millions of dollars, except per share amounts 2016 2015 2014\nRevenues(1)\u00a0 \u00a0 \u00a0\nInterest revenue $ 57,615 $ 58,551 $ 61,683\nInterest expense 12,511 11,921 13,690\nNet interest revenue $ 45,104 $ 46,630 $ 47,993\nCommissions and fees $ 10,521 $ 11,848 $ 13,032\nPrincipal transactions 7,585 6,008 6,698\nAdministration and other fiduciary fees 3,364 3,648 4,013",
+        "announced in April 2016, beginning in the first quarter of 2017, the remaining businesses and portfolio of assets in Citi Holdings will \nbe reported as part of Corporate/Other . For additional information, see \u201cCitigroup Segments,\u201d \u201cExecutive Summary\u20142016 Summary \nResults\u2014Citi Holdings\u201d and \u201cCiticorp\u201d above and \u201cCiti Holdings\u201d below .\nIn millions of dollars 2016 2015 2014% Change\u00a0\n\u00a02016 vs. 2015% Change\u00a0\n\u00a02015 vs. 2014\nNet interest revenue $ 79$ (152)$ (224) NM 32%"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9109,
+      "ragas_score": 0.9555,
+      "latency_sec": 58.62
+    },
+    {
+      "question": "What was Netflix's net income in 2020?",
+      "reference": "2,761",
+      "answer": "I cannot find this information in the provided documents.",
+      "contexts": [
+        "2020\n2019 (in thousands)\nUnited States\n$ 2,224,891 $ 1,503,459 International\n773,018 594,047 13. Selected Quarterly Financial Data (Unaudited)\n \n December 31,\nSeptember 30, June 30, March 31, \n(in thousands, except for per share data) 2020\nTotal revenues\n$ 6,644,442 $ 6,435,637 $ 6,148,286 $ 5,767,691 Gross profit\n2,479,282 2,567,886 2,504,579 2,167,990 Net income\n542,156 789,976 720,196 709,067 Earnings per share:\nBasic\n$ 1.23 $ 1.79 $ 1.63 $ 1.61 Diluted\n1.19 1.74 1.59 1.57 2019",
+        "Table of ContentsOther Data:\n \nAs of / Year Ended December 31, \n2020 2019 2018 2017 2016 \n(in thousands) Global streaming paid me\nmberships at end of period203,663 167,090 139,259 110,644 89,090 Global streaming paid net \nmembership additions36,573 27,831 28,615 21,554 18,251 A paid membership (also re\nferred to as a paid subscription) is defined as a membership that has the right to receive Netflix service following sign-up and a methodof payment being provided, and th",
+        "included in this Annual Report (Form 10-K) of Netflix, Inc. for the year ended December 31, 2020./s/ Ernst & Young LLP\nSan Jose, California\nJanuary 28, 2021"
+      ],
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.1725,
+      "ragas_score": 0.0862,
+      "latency_sec": 61.39
+    },
+    {
+      "question": "What was Ralph Lauren total revenues in 2014?",
+      "reference": "revenue",
+      "answer": "I cannot find this information in the provided documents.",
+      "contexts": [
+        "RALPH LAUREN CORPORA TION\nNOTES TO CONSOLIDA TED FINANCIAL STATEMENTS (Continued)\nF-9Advertising, marketing, and promotional expenses amounted to approximately $256 million , $217 million , and $213 million \nin Fiscal 2014 , Fiscal 2013 , and Fiscal 2012 , respectively . Deferred advertising, marketing, and promotional costs, which principally \nrelate to advertisements that have not yet been exhibited or services that have not yet been received, were approximately $9 million",
+        "which resulted in a $16 million gain recorded during the first quarter of Fiscal 2014; the Australia and New Zealand \nLicensed Operations Acquisition in July 2013; and our acquisition of the Ralph Lauren-branded business in Latin \nAmerica in June 2012;\n\u2022 discrete income tax benefits of $10 million and $15 million recognized within our provision for income taxes during \nFiscal 2014 and Fiscal 2013 , respectively , in connection with the settlements of two separate tax examinations.",
+        "RALPH LAUREN CORPORA TION\nNOTES TO CONSOLIDA TED FINANCIAL STATEMENTS (Continued)\nF-45Operating income for each of the Company's reportable segments, which has been recast to reflect the fourth quarter Fiscal \n2014 change in segment measurement, is as follows:\n\u00a0 Fiscal Years Ended\n\u00a0March 29,\n2014March 30,\n2013March 31,\n2012\n\u00a0 (millions)\nOperating income:\nWholesale(a).......................................................................... $ 963 $ 903 $ 835"
+      ],
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.2071,
+      "ragas_score": 0.1036,
+      "latency_sec": 59.72
+    },
+    {
+      "question": "What net zero target year does BP mention in their sustainability report?",
+      "reference": "2050",
+      "answer": "BP mentions 2050 or sooner as a net zero target year (bp Sustainability Report 2023, page 22). They also mention a 2025 target and a 2030 aim within their net zero targets and aims (bp Sustainability Report 2023, page 22).",
+      "contexts": [
+        "Read more in the bp Net Zero Ambition \nProgress Update 2024 pages 7 and 20\n See the glossary on pages 59-61\nbp Sustainability Report 2023\n18\nGetting to \nnet zeroOur approach Improving people\u2019s lives Caring for our planet Engaging stakeholders Our reporting Introduction",
+        "2021 performance\n2023 performance\n2030 aim2025 target\n2050 or sooner2022 performance1% \n5%\nNet zero a15-20%2%2020 performance 2%\n3%3\nbp Sustainability Report 2023\n22\nGetting to \nnet zeroOur approach Improving people\u2019s lives Caring for our planet Engaging stakeholders Our reporting Introduction",
+        "Our net zero targets and aims\nWe believe our ambition and aims, taken together, are consistent with the goals of the Paris Agreement. By setting a path that enables us to make a positive contribution, working to build and participate in many of the new net zero value chains the world will need, and by decarbonizing our own operations, our ambition and aims support the world\u2019s progress towards the goals of the Paris Agreement.\nThe bp Sustainability Report 2021 described our"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8505,
+      "ragas_score": 0.9253,
+      "latency_sec": 76.47
+    },
+    {
+      "question": "What carbon neutrality goal does PWC China reference in their ESG report?",
+      "reference": "2060",
+      "answer": "PwC China has made a global commitment to achieve net zero with 2030 goals. (PwC China ESG Report, page not specified in context)",
+      "contexts": [
+        ". PwC China is taking bold steps to contribute to China's ambitious 30-60 decarbonisation goals.As part of these efforts to fight climate change, we have made a global commitment to achieve net zero with 2030 goals. In order to achieve our net zero commitments, we will bring our people on a journey to make low carbon choices in our operations and in our supply chain",
+        ". The PwC China ESG Academy works alongside the Global Sustainability Academy and drives our key initiatives to promote climate and sustainability-related learning and knowledge sharing among our employees.Our Academy provides tailored learning for all grades and specialists, covering areas such as carbon neutrality, climate science and the impacts of climate change on businesses.Vantage is our online learning platform dedicated to upskilling all staff in PwC China on ESG issues",
+        "PwC China is engaged in a wide range of partnerships to deliver greater impact and to advance progress on ESG issues.World Economic Forum (WEF)As a strategic partner of WEF, we deliver sustained outcomes through active collaboration between business, government and other key stakeholders.PwC China collaborated with WEF on The Post-2020 Global Biodiversity Framework and What it Means for Business, a white paper focusing on business-relevant targets of the post-2020 Global Biodiversity Framework"
+      ],
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.7728,
+      "ragas_score": 0.7864,
+      "latency_sec": 62.97
+    },
+    {
+      "question": "What sustainability reporting framework does AstraZeneca follow?",
+      "reference": "GRI",
+      "answer": "AstraZeneca's sustainability reporting is with reference to the GRI Standards. (Source: Page 64)",
+      "contexts": [
+        "64 \nEurope\nEngagement on European sustainability, climate, and energy policy\nEnergy Efficiency \nDirectiveGoogle engaged with EU policymakers through DIGITALEUROPE to inform the development of a \nstandardized energy and sustainability reporting framework for data centers and establish measures \nto encourage greater reuse of waste heat. \nRenewable Energy \nDirectiveGoogle worked through DIGITALEUROPE and RE-Source to advocate for the inclusion of time-stamping",
+        "1 January 2023 to 31 December 2023, with \nreference to the GRI Standards.\nAnnual Report 2023\nwww.astrazeneca.com/annualreport2023\nAstraZeneca \nsustainability resources\nhttps://www.astrazeneca.com/\nsustainability/resources.html\nAssurance\nBureau Veritas has provided limited assurance for sustainability activities reported in the sustainability \ndata annex and in the Annual Report 2023. Details are described in the Letters of Assurance, which",
+        "Performance highlights 4\nAbout us 5\nGovernance 6\nWhat sustainability \nmeans at AstraZeneca 7\nMateriality assessment 7\nOur value chain 8\nStakeholder engagement 8\nAccess to healthcare 9\nIntroduction and overview 10\nEquitable access 10\nAffordability and pricing 12\nHealth system resilience 13Environmental protection 15\nIntroduction and overview 16\nAmbition Zero Carbon 17\nProduct sustainability 20\nNatural resources 22\nData annex 29\nMetrics and performance data 29Contents\nEthics and transparency 24"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9161,
+      "ragas_score": 0.9581,
+      "latency_sec": 63.65
+    },
+    {
+      "question": "What environmental objectives does BASF report on in 2023?",
+      "reference": "climate change",
+      "answer": "BASF reports on the climate change mitigation environmental objective and the pollution prevention and control environmental objective in 2023. (BASF Report 2023 Combined Management\u2019s Report \u2013 E.U. Taxonomy 162)",
+      "contexts": [
+        "BASF Report 2023 Combined Management\u2019s Report \u2013 Environmental\nEnvironmental\nEnvironmental protection is one of the most important global challenges of our time. We see it as part of \nour corporate obligation to preserve the natural foundations of life for future generations. Our core \nbusiness \u2013 production, processing and transportation of chemicals \u2013 therefore demands a responsible \napproach. Our aim is to minimize the impact we have on the environment along the entire value chain. This",
+        "\u2013Manufacture of plastics in primary form\nThe description of the economic activities by the E.U. Commission \nfor the four other environmental objectives not related to the \nclimate was published in November 2023. According to these \nrequirements, the following economic activity under the \nenvironmental objective of pollution prevention and control will \nbe additionally relevant for BASF for the first time from 2023 within \nthe meaning of the E.U. Taxonomy Regulation:",
+        "BASF Report 2023 Combined Management\u2019s Report \u2013 E.U. Taxonomy 162\nTaxonomy-eligible sales revenue, capital expenditures and operating expenditures in 2023\nMillion \u20ac\nTotalTaxonomy- \neligible %Taxonomy- \nnon-eligible %\nSales 68,902 8,421 12.2 60,481 87.8\nOf which climate change mitigation environmental objective 8,207 11.9\nOf which pollution prevention and control environmental objective 215 0.3\nInvestments (capex) 6,006 1,385 23.1 4,621 76.9"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8092,
+      "ragas_score": 0.9046,
+      "latency_sec": 70.74
+    },
+    {
+      "question": "What is Google's water goal in their 2024 environmental report?",
+      "reference": "water",
+      "answer": "To achieve our water replenishment target, Google is channeling ongoing investments into projects located within the watersheds where they operate (Google's 2024 Environmental Report, page 12).",
+      "contexts": [
+        "12\n 1 \nWhat\u2019s inside\nAbout this report\nGoogle\u2019s 2024 Environmental Report provides an overview of our \nenvironmental sustainability strategy, our targets, and our annual",
+        "This contributed to a 25% decrease in monthly \nnetwork water use in New Zealand from January to September 2023 and an associated 28% reduction in invoiced spend. In 2024 further roll-out of the programme is planned in New Zealand and Australia.\nbp Sustainability Report 2023\n46\nCaring for \nour planetOur approach Getting to net zero Improving people\u2019s lives Engaging stakeholders Our reporting Introduction",
+        "To achieve our water replenishment target, \nwe\u2019re channeling our ongoing investments into projects located within the watersheds where we operate. We work with external partners to implement these projects, delivering volumetric water benefits and improving other locally relevant aspects of watershed health such as water quality, community water access, and biodiversity. FIGURE 23 How we support our commitment to water stewardship\nAdvance responsible water use at Google"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7566,
+      "ragas_score": 0.8783,
+      "latency_sec": 65.86
+    },
+    {
+      "question": "What renewable energy commitment does Schneider Electric mention?",
+      "reference": "renewable",
+      "answer": "Schneider Electric committed to sourcing 100% renewable electricity by 2030, having joined Renewable Energy 100 (RE100) in 2017. (Schneider Electric 2022 Sustainable Development Report, page 95)",
+      "contexts": [
+        "occupation to keep energy consumption and resultant emissions to \na minimum, while reducing costs and improving employee \nexperience and comfort.3.5.3 RE100: switch to 100% renewable \nele\nctricity by 2030\nIn 2022, electricity consumption in Schneider Electric\u2019s sites \ngenerated 98,312 tonnes of CO2e emissions, i.e. 59% of emissions \nfrom energy consumption at sites. In 2017, Schneider joined \nRenewable Energy 100 (RE100) and committed to sourcing 100%",
+        "95\nLife Is On | Schneider Electric | www.se.com2022 Sustainable Development Report \nA dedicated series on renewable energy procurement was \norganized, enabling experts from the cleantech domain to explain \nvarious renewable energy options including onsite/offsite \ninstallations and various market instruments that can be adopted, \nincluding suitability conditions. \nThe outcome of the iAccelerate event resulted in the strong \nacceleration in the decarbonization commitment from the supplier",
+        "90\nSchneider Electric 2022 Sustainable Development Report | www.se.com2022 Sustainable Development Report \n3 Leading on decarbonization\nThe Group will continue to focus on additionality where feasible and \nprioritize onsite sourcing of renewables or bundled renewable \nelectricity opportunities. It will progressively reduce the reliance on \nunbundled certificates as it moves towards its 2030 goal of 100% \nrenewable electricity. Critical to the success of this program is"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8554,
+      "ragas_score": 0.9277,
+      "latency_sec": 67.36
+    },
+    {
+      "question": "What is the main task addressed in the PaperTab research paper?",
+      "reference": "table",
+      "answer": "I cannot find this information in the provided documents.",
+      "contexts": [
+        "the nature of the Selected Information, set out in the \u201cKey procedures performed\u201d section below.\nRoles and responsibilities \nbp is responsible for:\n ySe\nlecting and establishing the Basis of Reporting.\n yPr\neparing, measuring, presenting and reporting the \nSelected Information in accordance with the Basis of Reporting.\n yPu\nblishing the Basis of Reporting publicly in advance \nof, or at the same time as, the publication of the Selected Information.\n yDe",
+        "retrieving and applying science knowledge. In such situations, retrieved knowledge is unlikely to be helpful. 8/30\nfailures fell into this category. One example is a question\ndescribing an experiment:\nA student wants to determine the effect of garlic on\nthe growth of a fungus species. Several samples of\nfungus cultures are grown in the same amount of agar\nand light. Each sample is given a different amount of",
+        "oral reports from the Board of Executive Directors on, for example, business \ndevelopments including the major financial key performance indicators of the BASF \nGroup and its segments, macroeconomic developments and the economic situation \nin the main sales and procurement markets, and on deviations in business \ndevelopments from original plans. Furthermore, the Supervisory Board addressed \nfundamental questions of strategic corporate planning, including financial, investment,"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.1654,
+      "ragas_score": 0.5827,
+      "latency_sec": 62.22
+    },
+    {
+      "question": "What embedding approach does PaperTab propose for table retrieval?",
+      "reference": "BERT",
+      "answer": "I cannot find this information in the provided documents.",
+      "contexts": [
+        "independently answer a multiple choice question. Its suite\nof solvers has changed over the years, with new solvers being added and redundant solvers being dropped to maintain a\nsimple architecture. (Earlier solvers include use of Markov\nLogic Networks (Khot et al., 2015), reasoning over tables\n(Khashabi et al., 2016), and other neural approaches, now\nsuperceded by the language models.) As illustrated in Figure 2, they can be loosely grouped into:\n1. Statistical and information retrieval methods",
+        "Encoder: Our encoder has three embedding layers: vocabulary embedding V, ingredient embeddingI, and caloric-level embedding C. Each tokenin the (length Ln) recipe name is embedded via V;\nthe embedded token sequence is passed to a twolayered bidirectional GRU (BiGRU) (Cho et al.,\n2014), which outputs hidden states for names\n{nenc,j\u2208R2dh}, with hidden size dh. Similarly\neach of theLiinput ingredients is embedded via I,\nand the embedded ingredient sequence is passed",
+        "Figure 1: Sample data \ufb02ow through model architecture. Emphasis on prior recipe attention scores (darker\nis stronger). Ingredient attention omitted for clarity.\nThese embeddings are used in the \u2018 Prior Recipe \u2019\nand \u2018Prior Name \u2019 models, respectively.\nGiven a recipe representation r\u2208Rdr(where\ndris recipe- or vocabulary-embedding size depending on the recipe representation) the prior\nrecipe attention context aru\ntis calculated as\naru\nt=\u2211\nr\u2208Rk+\nu\u03b1(r,ht)\u00d7r."
+      ],
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0721,
+      "ragas_score": 0.036,
+      "latency_sec": 66.21
+    },
+    {
+      "question": "What dataset does the climate finance benchmark paper evaluate on?",
+      "reference": "climate",
+      "answer": "I cannot find this information in the provided documents.",
+      "contexts": [
+        "how Aristo performs \u201cout of the box\u201d after training on the\nscience exams). Each test probes a different semantic phenomenon of interest, as we now describe.\nNegation How well does Aristo handle negation? As a\n(limited) test, we generated a synthetic negation dataset (10k\nquestions), where each question has a synthetic context (replacing the retrieved sentences), plus a question about it, for\nexample:\nContext:\nAlan is small. Alan is tall. Bob is big. Bob is tall.",
+        "of deals that are counted toward the \ngoal rather than total deal value. These \nmeasures reflect both our commitment \nto addressing climate change through \nour business and a willingness to learn \nand adapt as the field of environmental \nfinance continues to evolve.",
+        "page 154).\nWe systematically evaluate sustainability criteria, including the \neffects of climate change, as an integral part of decisions on \ninvestments, acquisitions and divestitures in property, plant and \nequipment and financial assets. In this way, we not only assess \neconomic dimensions, but also the potential impacts on areas such \nas the environment, human rights or the local community. We \nevaluate both the potential impacts of our activities here as well as"
+      ],
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.1582,
+      "ragas_score": 0.0791,
+      "latency_sec": 69.04
+    },
+    {
+      "question": "We want to calculate a financial metric. Please help us compute it by basing your answers off of the statement of income and the statement of cash flows. Here's the question: what is the FY2015 unadjusted EBITDA % margin for Netflix? Calculate unadjusted EBITDA using unadjusted operating income and D&A (from cash flow statement).",
+      "reference": "5.4%",
+      "answer": "I cannot find this information in the provided documents.",
+      "contexts": [
+        "the methods of calculation can differ from those used by other \ncompanies. Alternative performance measures for the results of \noperations are EBIT before special items, EBITDA before special \nitems, EBITDA, the EBITDA margin before special items and \nadjusted earnings per share. Other APMs are net debt,1 free cash \nflow1 and capital expenditures (capex).2\nFrom the 2024 reporting year onward, we will use EBITDA before \nspecial items and free cash flow as the new most important key",
+        "Cash flows from operating activities 6,958 9,446 7,717 8,785 7,939 7,474 5,413 7,245 7,709 8,111\nEBITDA margin before special items % 14.1 14.9 17.9 17.5a15.4b14.0 12.6 14.4 12.3 11.1\nReturn on assets % 11.7 8.7 8.2 9.5a7.1 4.5 -1.2 9.5 2.1 2.8\nReturn on equity after tax % 19.7 14.4 13.3 18.9 14.1 21.6 -2.8 15.6 -0.9 1.0\nReturn on capital employed (ROCE) % \u2013 \u2013 \u2013 15.4 12.0b7.7 1.7 13.7 10.0 4.5\nAppropriation of profits",
+        "and sales of shareholdings, and other expenses and income that \narise outside of ordinary business activities. The EBITDA margin \nbefore special items is calculated as the ratio of EBITDA before \nspecial items to sales revenue. This relative indicator enables \noperational performance to be compared independently of the size \nof the underlying business.\nCalculation of free cash flow and segment cash flow\nSegment cash flow measures the cash inflow and outflow of a"
+      ],
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.1261,
+      "ragas_score": 0.063,
+      "latency_sec": 55.79
+    },
+    {
+      "question": "What is Netflix's year end FY2017 total current liabilities (in USD millions)? Base your judgments on the information provided primarily in the balance sheet.",
+      "reference": "$5466.00",
+      "answer": "I cannot find this information in the provided documents.",
+      "contexts": [
+        "rsuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002, that the AnnualReport on Form 10-K of Netflix, Inc. for \nthe year ended December 31, 2020 fully complies with the requirements of Section 13(a) or 15(d) of the SecuritiesExchange Act of 1934 and that infor\nmation contained in such report fairly presents, in all material respects, the financial condition and results of operations ofNetflix, Inc.\n \nDated: January 28, 2021",
+        "the corresponding section of the statement of cash flows.\nCash flows from financing activities include payments for leases in \nwhich BASF is lessee as well as dividend payments.\nOther financing-related liabilities primarily comprise liabilities \nfrom accounts used for cash pooling with BASF companies not \nincluded in the Consolidated Financial Statements. They are \nreported in miscellaneous liabilities within the balance sheet item \nother liabilities that qualify as financial instruments.",
+        "contained in such report fairly presents, in all material respects, the financial condition and results of operations of Netflix, Inc.Dated: January 28, 2021\n By: / S/ REED HASTINGS \n Reed Hastings \n Co-Chief Executive Officer I, Ted Sarandos, certify, pursuan\nt to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002, that the Annual Reporton Form 10-K of Netflix, Inc. for the y"
+      ],
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.173,
+      "ragas_score": 0.0865,
+      "latency_sec": 60.14
+    },
+    {
+      "question": "What is FY2018 days payable outstanding (DPO) for Walmart? DPO is defined as: 365 * (average accounts payable between FY2017 and FY2018) / (FY2018 COGS + change in inventory between FY2017 and FY2018). Round your answer to two decimal places. Please base your judgments on the information provided primarily in the statement of financial position and the P&L statement.",
+      "reference": "42.69",
+      "answer": "I cannot find this information in the provided documents.",
+      "contexts": [
+        "payment or withholding of the income tax is not made within ninety (90) days of the end of the tax year in which the income taxliability arises or such other period specified in Section\n 222(1)(c) of the U.K. Income Tax Act (Earnings and Pensions) Act 2003 (the\u201cDue\n Date\u201d), the amount of any uncollected income tax shall constitute a loan owed by you to Walmart or an Affiliate, effective onthe",
+        "In\n addition, the information contained herein is general in nature and may not apply to your particular situation, and Walmart is notin\n a position to assure you of a particular result. Accordingly, you are advised to seek appropriate professional advice as to how therelevant laws in your country may apply to your situation.\nFinally,\n if you are a citizen or resident of a country other than the one in which you are currently working and/or residing, transferContinuous",
+        "2.00 1.96 1.92 1.88 1.59 \n Financial position\n Inventories\n $43,046 $44,469 $45,141 $44,858 $43,803 Property, equipment, capital lease and financing obligation assets, net\n 114,178 116,516 116,655 117,907 116,681 Total assets\n 198,825 199,581 203,490 204,541 202,910 Long-term debt and long-term capital lease and financing obligations (excluding\namounts due within one year)\n 42,018 44,030 43,495 44,368 41,240Total Walmart shareholders' equity\n 77,798 80,546 81,394 76,255 76,343 \n Unit counts"
+      ],
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.1635,
+      "ragas_score": 0.0818,
+      "latency_sec": 68.95
+    },
+    {
+      "question": "Based on the information provided primarily in the statement of income, what is the FY2018 - FY2019 change in unadjusted operating income % margin for Walmart? Answer in units of percents and round to one decimal place.",
+      "reference": "0.2%",
+      "answer": "To determine the FY2018 - FY2019 change in unadjusted operating income % margin, we first need to identify the net sales and operating income for both fiscal years.\n\nBased on the \"Percentage change in net sales from previous fiscal year\" data, the columns in the main table represent the following fiscal years from left to right: 2022, 2021, 2020, 2019, and 2018.\n\nFrom the provided context:\n**For FY2019:**\n*   Net sales: $473,076 (Context)\n*   Operating income: $26,872 (Context)\n\n**For FY2018:**\n*   Net sales: $465,604 (Context)\n*   Operating income: $27,725 (Context)\n\nNow, calculate the operating income % margin for each year:\n*   **FY2019 Operating Income % Margin:**\n    ($26,872 / $473,076) * 100 = 5.6802% (Context)\n*   **FY2018 Operating Income % Margin:**\n    ($27,725 / $465,604) * 100 = 5.9546% (Context)\n\nFinally, calculate the change from FY2018 to FY2019 (FY2019 Margin - FY2018 Margin):\n*   Change = 5.6802% - 5.9546% = -0.2744%\n\nRounding to one decimal place, the change is **-0.3%**.",
+      "contexts": [
+        "0.8 % (0.7 )% 2.0 % 1.6 % 5.0 %Net sales\n $481,317 $478,614 $482,229 $473,076 $465,604 Percentage change in net sales from previous fiscal year\n 0.6 % (0.7 )% 1.9 % 1.6 % 5.0 %Increase (decrease) in calendar comparable sales \n(1) in the United States 1.4 % 0.3 % 0.5 % (0.5 )% 2.4 %Walmart U.S.\n 1.6 % 1.0 % 0.6 % (0.6 )% 2.0 %Sam's Club\n 0.5 % (3.2 )% 0.0 % 0.3 % 4.1 %Gross profit margin",
+        "24.9 % 24.6 % 24.3 % 24.3 % 24.3 %Operating, selling, general and administrative expenses, as a percentage of net sales\n 21.2 % 20.3 % 19.4 % 19.3 % 19.0 %Operating income\n $22,764 $24,105 $27,147 $26,872 $27,725 Income from continuing operations attributable to Walmart\n 13,643 14,694 16,182 15,918 16,963 Net income per common share:\n Diluted income per common share from continuing operations attributable to\nWalmart\n $4.38 $4.57 $4.99 $4.85 $5.01 Dividends declared per common share",
+        "The Company\u2019s future gross margins can be impacted by a variety of factors, as discussed in Part I, Item 1A of this Form 10-K \nunder the heading \u201cRisk Factors.\u201d As a result, the Company believes, in general, gross margins will be subject to volatility and \ndownward pressure.\nOperating Expenses\nOperating expenses for 2022 , 2021 and 2020 were as follows (dollars in millions):\n2022 Change 2021 Change 2020\nResearch and development $ 26,251 20 % $ 21,914 17 % $ 18,752"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7798,
+      "ragas_score": 0.8899,
+      "latency_sec": 98.76
+    }
+  ]
+}

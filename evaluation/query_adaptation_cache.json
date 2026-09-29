@@ -1,0 +1,452 @@
+{
+  "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What is the expiration date of this contract?": {
+    "original_query": "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What is the expiration date of this contract?",
+    "expanded_queries": [
+      "What is the expiration date of the Marketing Affiliate Agreement?",
+      "When does the term of this Agreement end?",
+      "What is the termination date of the Marketing Affiliate Agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What is the renewal term for this contract?": {
+    "original_query": "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What is the renewal term for this contract?",
+    "expanded_queries": [
+      "What is the duration of the renewal term for this agreement?",
+      "What are the provisions for extending the term of this contract?",
+      "What is the length of any subsequent term or automatic renewal period?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What is the notice period required to terminate the renewal?": {
+    "original_query": "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What is the notice period required to terminate the renewal?",
+    "expanded_queries": [
+      "What is the required period of notice for terminating the renewal term?",
+      "What advance notice is necessary to prevent the automatic renewal of the agreement?",
+      "What is the timeframe for providing written notice of an election not to renew the agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What is the governing law for this contract?": {
+    "original_query": "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What is the governing law for this contract?",
+    "expanded_queries": [
+      "Governing law provision",
+      "Applicable law clause",
+      "Choice of law stipulation"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; Is there an anti-assignment clause in this contract?": {
+    "original_query": "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; Is there an anti-assignment clause in this contract?",
+    "expanded_queries": [
+      "Does this agreement contain a non-assignment provision?",
+      "Are there any restrictions on the assignment or transfer of rights or obligations under this contract?",
+      "Locate any clause prohibiting the assignment of this agreement."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; Is there a minimum commitment required under this contract?": {
+    "original_query": "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; Is there a minimum commitment required under this contract?",
+    "expanded_queries": [
+      "Does this agreement impose any minimum obligations?",
+      "Are there any minimum performance requirements specified in the contract?",
+      "What are the minimum activity or volume commitments under the agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What licenses are granted under this contract?": {
+    "original_query": "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What licenses are granted under this contract?",
+    "expanded_queries": [
+      "What licenses are granted pursuant to this Marketing Affiliate Agreement?",
+      "Identify all license rights conferred by this agreement.",
+      "Which provisions of this contract address the grant of licenses?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What are the audit rights under this contract?": {
+    "original_query": "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What are the audit rights under this contract?",
+    "expanded_queries": [
+      "What are the rights to audit under this Marketing Affiliate Agreement?",
+      "What provisions govern the inspection or examination of records pursuant to this Agreement?",
+      "What are the rights of access to books, records, or financial information under this contract?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; Is there a cap on liability under this contract?": {
+    "original_query": "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; Is there a cap on liability under this contract?",
+    "expanded_queries": [
+      "Limitation of liability clause",
+      "Contractual liability cap",
+      "Maximum aggregate liability limit"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What is the duration of any warranties provided in this contract?": {
+    "original_query": "Consider the Marketing Affiliate Agreement between Birch First Global Investments Inc. and Mount Knowledge Holdings Inc.; What is the duration of any warranties provided in this contract?",
+    "expanded_queries": [
+      "What is the term of any representations and warranties set forth in this agreement?",
+      "What is the period of validity for any warranties under this contract?",
+      "How long do the warranties in this contract remain in effect?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What is the expiration date of this contract?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What is the expiration date of this contract?",
+    "expanded_queries": [
+      "What is the expiration date of this agreement?",
+      "When does the term of this contract end?",
+      "What is the expiry date of the Video-on-Demand Content License Agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What is the renewal term for this contract?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What is the renewal term for this contract?",
+    "expanded_queries": [
+      "What is the renewal period for this agreement?",
+      "What is the extension term of this contract?",
+      "What are the terms and conditions for the renewal of this contract?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What is the notice period required to terminate the renewal?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What is the notice period required to terminate the renewal?",
+    "expanded_queries": [
+      "What is the notice period for non-renewal of the agreement?",
+      "How much advance notice is required to prevent the agreement's renewal?",
+      "What is the required notice for terminating a renewal term?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What is the governing law for this contract?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What is the governing law for this contract?",
+    "expanded_queries": [
+      "What is the governing law of this agreement?",
+      "Which law is applicable to this contract?",
+      "What is the choice of law for this agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Is there a most favored nation clause in this contract?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Is there a most favored nation clause in this contract?",
+    "expanded_queries": [
+      "most favored nation clause",
+      "MFN provision",
+      "more favorable terms offered to other parties"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Can this contract be terminated for convenience, and under what conditions?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Can this contract be terminated for convenience, and under what conditions?",
+    "expanded_queries": [
+      "Termination for convenience clauses and their conditions.",
+      "Provisions for termination without cause and associated requirements.",
+      "Right to terminate for convenience, including notice and payment terms."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Is there an anti-assignment clause in this contract?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Is there an anti-assignment clause in this contract?",
+    "expanded_queries": [
+      "Provisions prohibiting assignment of this agreement.",
+      "Clauses requiring consent for transfer or assignment.",
+      "Restrictions on assignment or delegation of rights and obligations."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Does this contract include any revenue or profit-sharing arrangements?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Does this contract include any revenue or profit-sharing arrangements?",
+    "expanded_queries": [
+      "Contractual provisions for revenue sharing or profit sharing.",
+      "Clauses detailing gross revenue splits, net profit distributions, or royalty payments.",
+      "Terms regarding financial participation, revenue allocation, or profit distribution."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Is there a minimum commitment required under this contract?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Is there a minimum commitment required under this contract?",
+    "expanded_queries": [
+      "Minimum commitment or minimum obligation required by this agreement.",
+      "Minimum guarantee or minimum payment terms in this contract.",
+      "Any minimum requirements or minimum spend provisions in this agreement."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What licenses are granted under this contract?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What licenses are granted under this contract?",
+    "expanded_queries": [
+      "What rights are granted under this agreement?",
+      "What permissions are conferred by this contract?",
+      "What authorizations are provided pursuant to this agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Does this contract include an unlimited or all-you-can-eat license?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Does this contract include an unlimited or all-you-can-eat license?",
+    "expanded_queries": [
+      "Does this contract include an unlimited license or a license without usage restrictions?",
+      "Does this contract specify a flat fee license or a fixed fee license for content usage?",
+      "Does this contract grant a license without quantity limitations or volume caps?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What are the audit rights under this contract?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; What are the audit rights under this contract?",
+    "expanded_queries": [
+      "What are the audit rights specified in this agreement?",
+      "What are the rights to inspect books and records under this contract?",
+      "What provisions govern the examination of financial records in this agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Is there uncapped liability under this contract?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Is there uncapped liability under this contract?",
+    "expanded_queries": [
+      "Does the agreement impose unlimited liability?",
+      "Are there any provisions for liability without limitation?",
+      "Does the contract contain an exclusion of liability caps?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Is there a cap on liability under this contract?": {
+    "original_query": "Consider the Video-on-Demand Content License Agreement between Rogers Cable Communications Inc. and EuroMedia Holdings Corp.; Is there a cap on liability under this contract?",
+    "expanded_queries": [
+      "Does this contract contain a Limitation of Liability clause?",
+      "Are there any provisions in this agreement that specify a maximum monetary liability?",
+      "What clauses in this contract address the limitation or exclusion of a party's liability?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; What is the renewal term for this contract?": {
+    "original_query": "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; What is the renewal term for this contract?",
+    "expanded_queries": [
+      "What is the duration of the renewal term for this agreement?",
+      "What are the provisions governing the renewal period of this contract?",
+      "What are the terms for the extension of this agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; What is the governing law for this contract?": {
+    "original_query": "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; What is the governing law for this contract?",
+    "expanded_queries": [
+      "What is the choice of law for this agreement?",
+      "Which law shall govern this contract?",
+      "Identify the applicable law provision."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; Does this contract include an exclusivity agreement?": {
+    "original_query": "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; Does this contract include an exclusivity agreement?",
+    "expanded_queries": [
+      "Does the agreement contain any exclusivity provisions?",
+      "Are there clauses granting sole and exclusive rights or licenses?",
+      "Does the contract impose any exclusive dealing or non-compete obligations?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; Does this contract include any revenue or profit-sharing arrangements?": {
+    "original_query": "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; Does this contract include any revenue or profit-sharing arrangements?",
+    "expanded_queries": [
+      "revenue sharing provisions",
+      "profit sharing arrangements",
+      "revenue split OR profit distribution"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; Does the licensee's affiliates have any licensing rights under this contract?": {
+    "original_query": "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; Does the licensee's affiliates have any licensing rights under this contract?",
+    "expanded_queries": [
+      "Licensee's Affiliates' rights and entitlements under this Agreement.",
+      "Scope of licensed rights for Licensee's related entities.",
+      "Provisions granting or extending license privileges to Licensee's controlled entities."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; What are the audit rights under this contract?": {
+    "original_query": "Consider the Content Distribution and License Agreement between ConvergTV, Inc. and Fulucai Productions Ltd.; What are the audit rights under this contract?",
+    "expanded_queries": [
+      "Provisions concerning audit rights in this agreement.",
+      "Rights to inspect books and records under this contract.",
+      "Terms for examination of financial records and accounts."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What is the expiration date of this contract?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What is the expiration date of this contract?",
+    "expanded_queries": [
+      "What is the expiration date or term end date of this contract?",
+      "When does this agreement terminate or conclude?",
+      "What is the duration or effective period of this contract?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What is the renewal term for this contract?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What is the renewal term for this contract?",
+    "expanded_queries": [
+      "Content License Agreement renewal term duration.",
+      "Content License Agreement term extension provisions.",
+      "Content License Agreement automatic renewal period."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What is the notice period required to terminate the renewal?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What is the notice period required to terminate the renewal?",
+    "expanded_queries": [
+      "What is the required notice period for terminating the renewal term?",
+      "What advance notice is necessary to prevent the automatic renewal of the agreement?",
+      "What period of notice is mandated for non-renewal of the agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What is the governing law for this contract?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What is the governing law for this contract?",
+    "expanded_queries": [
+      "Governing law for the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.",
+      "Choice of law provision in the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.",
+      "Applicable law clause in the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Does this contract include an exclusivity agreement?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Does this contract include an exclusivity agreement?",
+    "expanded_queries": [
+      "Does the Content License Agreement contain an exclusive license provision?",
+      "Are there any clauses in the agreement establishing sole and exclusive rights?",
+      "Does the contract restrict the licensor from granting similar licenses to other parties?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What happens in the event of a change of control of one of the parties in this contract?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What happens in the event of a change of control of one of the parties in this contract?",
+    "expanded_queries": [
+      "Effect of a party's change of control on this agreement",
+      "Assignment or termination rights upon change of control of a party",
+      "Provisions concerning a party's merger, acquisition, or sale of substantially all assets"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Is there an anti-assignment clause in this contract?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Is there an anti-assignment clause in this contract?",
+    "expanded_queries": [
+      "Locate any provisions prohibiting assignment of this agreement.",
+      "Are there any restrictions on the assignment or transfer of rights and obligations?",
+      "Find clauses addressing non-assignability or delegation of duties."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Does this contract include any revenue or profit-sharing arrangements?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Does this contract include any revenue or profit-sharing arrangements?",
+    "expanded_queries": [
+      "Does this agreement include provisions for revenue sharing or profit sharing?",
+      "Are there any clauses detailing royalties, revenue allocation, or financial participation?",
+      "What are the terms regarding the distribution of proceeds or division of profits?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What licenses are granted under this contract?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What licenses are granted under this contract?",
+    "expanded_queries": [
+      "What licenses are conferred by this Agreement?",
+      "Identify the rights granted under this Content License Agreement.",
+      "Provisions detailing the grant of licenses in this contract."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Are the licenses granted under this contract non-transferable?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Are the licenses granted under this contract non-transferable?",
+    "expanded_queries": [
+      "License transferability provisions",
+      "Assignment of licenses clause",
+      "Restrictions on license transfer or assignment"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What are the audit rights under this contract?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; What are the audit rights under this contract?",
+    "expanded_queries": [
+      "Audit rights provisions in this agreement.",
+      "Right to inspect books and records under this contract.",
+      "Terms for examination of financial records herein."
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Is there uncapped liability under this contract?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Is there uncapped liability under this contract?",
+    "expanded_queries": [
+      "Does this contract specify unlimited liability?",
+      "Are there any provisions in this agreement that cap liability?",
+      "What are the terms regarding the limitation of liability under this agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Is there a cap on liability under this contract?": {
+    "original_query": "Consider the Content License Agreement between PSiTech Corporation and Empirical Ventures, Inc.; Is there a cap on liability under this contract?",
+    "expanded_queries": [
+      "Are there any provisions regarding limitation of liability?",
+      "Does the agreement specify a maximum or aggregate liability?",
+      "What are the contractual limits or caps on monetary damages?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; What is the expiration date of this contract?": {
+    "original_query": "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; What is the expiration date of this contract?",
+    "expanded_queries": [
+      "What is the expiry date of this Content License Agreement?",
+      "When does the term of this Content License Agreement end?",
+      "What is the termination date of this Content License Agreement?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; What is the governing law for this contract?": {
+    "original_query": "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; What is the governing law for this contract?",
+    "expanded_queries": [
+      "What is the choice of law for this agreement?",
+      "Which law applies to this contract?",
+      "What is the applicable law for the interpretation of this contract?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; Does this contract include any right of first refusal, right of first offer, or right of first negotiation?": {
+    "original_query": "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; Does this contract include any right of first refusal, right of first offer, or right of first negotiation?",
+    "expanded_queries": [
+      "Does the agreement contain any right of first refusal, right of first offer, or right of first negotiation clauses?",
+      "Are there provisions in the contract for a right of first refusal, right of first offer, or right of first negotiation?",
+      "Does the contract stipulate any ROFR, ROFO, or ROFN?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; Is there an anti-assignment clause in this contract?": {
+    "original_query": "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; Is there an anti-assignment clause in this contract?",
+    "expanded_queries": [
+      "anti-assignment clause",
+      "prohibition on assignment or transfer",
+      "assignment and delegation provision"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; Does this contract include any revenue or profit-sharing arrangements?": {
+    "original_query": "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; Does this contract include any revenue or profit-sharing arrangements?",
+    "expanded_queries": [
+      "Revenue share provisions OR profit share clauses OR royalty payments",
+      "Distribution of revenue OR allocation of profit OR earnings split",
+      "Payment terms based on revenue OR profit OR compensation structure"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; What are the audit rights under this contract?": {
+    "original_query": "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; What are the audit rights under this contract?",
+    "expanded_queries": [
+      "What provisions address audit rights in the Content License Agreement?",
+      "What are the inspection rights under the terms of this Content License Agreement?",
+      "What rights does the Content License Agreement grant for the examination of records?"
+    ],
+    "model": "gemini-2.5-flash"
+  },
+  "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; Is there uncapped liability under this contract?": {
+    "original_query": "Consider the Content License Agreement between Beijing Sun Seven Stars Culture Development Limited and You On Demand Holdings, Inc.; Is there uncapped liability under this contract?",
+    "expanded_queries": [
+      "Does the contract specify unlimited liability for any party?",
+      "Are there any provisions in the agreement that remove or waive liability caps?",
+      "What are the terms regarding the absence of limitations on liability?"
+    ],
+    "model": "gemini-2.5-flash"
+  }
+}

@@ -1,0 +1,1435 @@
+{
+  "config": {
+    "top_k": 5,
+    "top_n": 3,
+    "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+    "n_questions": 20,
+    "mode": "retrieval_only"
+  },
+  "summary": {
+    "bm25_only": {
+      "label": "Config 1 \u2014 BM25 Only",
+      "precision_at_k": 0.19,
+      "recall_at_k": 0.35,
+      "f1_at_k": 0.2313,
+      "hit_at_1": 0.15,
+      "mrr": 0.2142,
+      "avg_latency_sec": 0.025,
+      "n_samples": 20,
+      "per_category": {
+        "financial": {
+          "f1_at_k": 0.0,
+          "mrr": 0.0,
+          "n": 9
+        },
+        "esg": {
+          "f1_at_k": 0.5538,
+          "mrr": 0.5405,
+          "n": 7
+        },
+        "scientific": {
+          "f1_at_k": 0.1875,
+          "mrr": 0.125,
+          "n": 4
+        }
+      }
+    },
+    "faiss_only": {
+      "label": "Config 2 \u2014 FAISS Dense Only",
+      "precision_at_k": 0.23,
+      "recall_at_k": 0.475,
+      "f1_at_k": 0.2972,
+      "hit_at_1": 0.45,
+      "mrr": 0.4667,
+      "avg_latency_sec": 0.0685,
+      "n_samples": 20,
+      "per_category": {
+        "financial": {
+          "f1_at_k": 0.1376,
+          "mrr": 0.3333,
+          "n": 9
+        },
+        "esg": {
+          "f1_at_k": 0.5453,
+          "mrr": 0.7619,
+          "n": 7
+        },
+        "scientific": {
+          "f1_at_k": 0.2222,
+          "mrr": 0.25,
+          "n": 4
+        }
+      }
+    },
+    "hybrid_no_reranker": {
+      "label": "Config 3 \u2014 Hybrid (no reranker)",
+      "precision_at_k": 0.22,
+      "recall_at_k": 0.475,
+      "f1_at_k": 0.2883,
+      "hit_at_1": 0.3,
+      "mrr": 0.3875,
+      "avg_latency_sec": 0.0549,
+      "n_samples": 20,
+      "per_category": {
+        "financial": {
+          "f1_at_k": 0.1376,
+          "mrr": 0.2222,
+          "n": 9
+        },
+        "esg": {
+          "f1_at_k": 0.5198,
+          "mrr": 0.6786,
+          "n": 7
+        },
+        "scientific": {
+          "f1_at_k": 0.2222,
+          "mrr": 0.25,
+          "n": 4
+        }
+      }
+    },
+    "full_system": {
+      "label": "Config 4 \u2014 Full System (YOUR SYSTEM)",
+      "precision_at_k": 0.3,
+      "recall_at_k": 0.525,
+      "f1_at_k": 0.365,
+      "hit_at_1": 0.15,
+      "mrr": 0.3417,
+      "avg_latency_sec": 0.2486,
+      "n_samples": 20,
+      "per_category": {
+        "financial": {
+          "f1_at_k": 0.1667,
+          "mrr": 0.1481,
+          "n": 9
+        },
+        "esg": {
+          "f1_at_k": 0.6857,
+          "mrr": 0.6429,
+          "n": 7
+        },
+        "scientific": {
+          "f1_at_k": 0.25,
+          "mrr": 0.25,
+          "n": 4
+        }
+      }
+    }
+  },
+  "results": [
+    {
+      "config": "bm25_only",
+      "question": "What was Apple's total net sales in fiscal year 2022?",
+      "reference": "394,328",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.029,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf",
+        "FinQA_RL_2014.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What was Netflix's total revenue in 2020?",
+      "reference": "24,996",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.019,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What was Walmart's net sales in fiscal year 2017?",
+      "reference": "481,317",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.023,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What was Citigroup's total revenues net of interest expense in 2016?",
+      "reference": "77,219",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.027,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf",
+        "FinQA_RL_2014.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What were Apple's services revenue in fiscal year 2022?",
+      "reference": "78,129",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.022,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf",
+        "FinQA_RL_2014.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What was the net income reported by Netflix in 2020?",
+      "reference": "2,761",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.025,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "FinQA_C_2016.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What products revenue did Apple report in fiscal year 2022?",
+      "reference": "316,199",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.024,
+      "num_docs": 5,
+      "top_sources": [
+        "FinQA_ABMD_2003.pdf",
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What was the total revenue of Ralph Lauren in 2014?",
+      "reference": "revenue",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.026,
+      "num_docs": 5,
+      "top_sources": [
+        "FinQA_RL_2014.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What net zero target year does BP mention in their sustainability report?",
+      "reference": "2050",
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.3333,
+      "hit_at_1": 0.0,
+      "mrr": 0.2,
+      "latency_sec": 0.029,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf",
+        "ClimRetrieve_PWC China ESG Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What carbon neutrality goal does PWC China reference in their ESG report?",
+      "reference": "2060",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.03,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_PWC China ESG Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What sustainability reporting framework does AstraZeneca follow?",
+      "reference": "GRI",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 0.0,
+      "mrr": 0.25,
+      "latency_sec": 0.017,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_AstraZeneca Sustainability Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What environmental objectives does BASF report on in 2023?",
+      "reference": "climate change",
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.75,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.023,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "ClimRetrieve_Schneider Sustainability Report.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What is Google's water goal in their 2024 environmental report?",
+      "reference": "water",
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.8889,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.025,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "ClimateFinanceBench_google-2024-environmental-report.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What renewable energy commitment does Schneider Electric mention?",
+      "reference": "renewable",
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "f1_at_k": 1.0,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.019,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_Schneider Sustainability Report.pdf",
+        "ClimateFinanceBench_google-2024-environmental-report.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What emissions target does AstraZeneca set for 2030?",
+      "reference": "carbon",
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.3333,
+      "hit_at_1": 0.0,
+      "mrr": 0.3333,
+      "latency_sec": 0.02,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_AstraZeneca Sustainability Report 2023.pdf",
+        "ClimateFinanceBench_BASF_Report_2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What embedding approach does the PaperTab paper propose for table retrieval?",
+      "reference": "BERT",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.028,
+      "num_docs": 5,
+      "top_sources": [
+        "PaperTab_1909.01958.pdf",
+        "ClimRetrieve_PWC China ESG Report 2023.pdf",
+        "PaperTab_1909.00105.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What is the main task addressed in the PaperTab research paper?",
+      "reference": "table",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.029,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "PaperTab_1909.00105.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What dataset does the climate finance benchmark paper use?",
+      "reference": "climate",
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.75,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.022,
+      "num_docs": 5,
+      "top_sources": [
+        "PaperTab_1909.01958.pdf",
+        "ClimRetrieve_PWC China ESG Report 2023.pdf",
+        "FinQA_C_2016.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What method does the paper propose for scientific table understanding?",
+      "reference": "table",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.026,
+      "num_docs": 5,
+      "top_sources": [
+        "PaperTab_1909.01958.pdf",
+        "ClimRetrieve_PWC China ESG Report 2023.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "bm25_only",
+      "question": "What is the primary business segment of Apple described in the 2022 annual report?",
+      "reference": "iPhone",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.036,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf",
+        "FinQA_C_2016.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What was Apple's total net sales in fiscal year 2022?",
+      "reference": "394,328",
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.3333,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.747,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What was Netflix's total revenue in 2020?",
+      "reference": "24,996",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.033,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_NETFLIX_2020_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What was Walmart's net sales in fiscal year 2017?",
+      "reference": "481,317",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.032,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What was Citigroup's total revenues net of interest expense in 2016?",
+      "reference": "77,219",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.037,
+      "num_docs": 5,
+      "top_sources": [
+        "FinQA_C_2016.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What were Apple's services revenue in fiscal year 2022?",
+      "reference": "78,129",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.032,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What was the net income reported by Netflix in 2020?",
+      "reference": "2,761",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.031,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_NETFLIX_2020_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What products revenue did Apple report in fiscal year 2022?",
+      "reference": "316,199",
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.3333,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.033,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What was the total revenue of Ralph Lauren in 2014?",
+      "reference": "revenue",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.032,
+      "num_docs": 5,
+      "top_sources": [
+        "FinQA_RL_2014.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What net zero target year does BP mention in their sustainability report?",
+      "reference": "2050",
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.75,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.034,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What carbon neutrality goal does PWC China reference in their ESG report?",
+      "reference": "2060",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.035,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_PWC China ESG Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What sustainability reporting framework does AstraZeneca follow?",
+      "reference": "GRI",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.033,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_AstraZeneca Sustainability Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What environmental objectives does BASF report on in 2023?",
+      "reference": "climate change",
+      "precision_at_k": 0.2,
+      "recall_at_k": 0.5,
+      "f1_at_k": 0.2857,
+      "hit_at_1": 0.0,
+      "mrr": 0.3333,
+      "latency_sec": 0.032,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What is Google's water goal in their 2024 environmental report?",
+      "reference": "water",
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.8889,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.031,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_google-2024-environmental-report.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What renewable energy commitment does Schneider Electric mention?",
+      "reference": "renewable",
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.75,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.032,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_Schneider Sustainability Report.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What emissions target does AstraZeneca set for 2030?",
+      "reference": "carbon",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.032,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_AstraZeneca Sustainability Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What embedding approach does the PaperTab paper propose for table retrieval?",
+      "reference": "BERT",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.034,
+      "num_docs": 5,
+      "top_sources": [
+        "PaperTab_1909.01958.pdf",
+        "PaperTab_1909.00105.pdf",
+        "FinQA_RL_2014.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What is the main task addressed in the PaperTab research paper?",
+      "reference": "table",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.031,
+      "num_docs": 5,
+      "top_sources": [
+        "PaperTab_1909.01958.pdf",
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf",
+        "ClimRetrieve_PWC China ESG Report 2023.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What dataset does the climate finance benchmark paper use?",
+      "reference": "climate",
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.8889,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.036,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf",
+        "ClimateFinanceBench_google-2024-environmental-report.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What method does the paper propose for scientific table understanding?",
+      "reference": "table",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.032,
+      "num_docs": 5,
+      "top_sources": [
+        "PaperTab_1909.01958.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "faiss_only",
+      "question": "What is the primary business segment of Apple described in the 2022 annual report?",
+      "reference": "iPhone",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.032,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What was Apple's total net sales in fiscal year 2022?",
+      "reference": "394,328",
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.3333,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.057,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What was Netflix's total revenue in 2020?",
+      "reference": "24,996",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.047,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_NETFLIX_2020_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What was Walmart's net sales in fiscal year 2017?",
+      "reference": "481,317",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.053,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What was Citigroup's total revenues net of interest expense in 2016?",
+      "reference": "77,219",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.057,
+      "num_docs": 5,
+      "top_sources": [
+        "FinQA_C_2016.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What were Apple's services revenue in fiscal year 2022?",
+      "reference": "78,129",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.052,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What was the net income reported by Netflix in 2020?",
+      "reference": "2,761",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.055,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_NETFLIX_2020_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What products revenue did Apple report in fiscal year 2022?",
+      "reference": "316,199",
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.3333,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.054,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What was the total revenue of Ralph Lauren in 2014?",
+      "reference": "revenue",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.055,
+      "num_docs": 5,
+      "top_sources": [
+        "FinQA_RL_2014.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What net zero target year does BP mention in their sustainability report?",
+      "reference": "2050",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.06,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What carbon neutrality goal does PWC China reference in their ESG report?",
+      "reference": "2060",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.061,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_PWC China ESG Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What sustainability reporting framework does AstraZeneca follow?",
+      "reference": "GRI",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.048,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_AstraZeneca Sustainability Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What environmental objectives does BASF report on in 2023?",
+      "reference": "climate change",
+      "precision_at_k": 0.2,
+      "recall_at_k": 0.5,
+      "f1_at_k": 0.2857,
+      "hit_at_1": 0.0,
+      "mrr": 0.25,
+      "latency_sec": 0.053,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What is Google's water goal in their 2024 environmental report?",
+      "reference": "water",
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.8889,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.055,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_google-2024-environmental-report.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What renewable energy commitment does Schneider Electric mention?",
+      "reference": "renewable",
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.75,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.051,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_Schneider Sustainability Report.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What emissions target does AstraZeneca set for 2030?",
+      "reference": "carbon",
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5714,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.051,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimRetrieve_AstraZeneca Sustainability Report 2023.pdf",
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What embedding approach does the PaperTab paper propose for table retrieval?",
+      "reference": "BERT",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.059,
+      "num_docs": 5,
+      "top_sources": [
+        "PaperTab_1909.00105.pdf",
+        "FinQA_RL_2014.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What is the main task addressed in the PaperTab research paper?",
+      "reference": "table",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.057,
+      "num_docs": 5,
+      "top_sources": [
+        "PaperTab_1909.01958.pdf",
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf",
+        "ClimRetrieve_PWC China ESG Report 2023.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What dataset does the climate finance benchmark paper use?",
+      "reference": "climate",
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.8889,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.051,
+      "num_docs": 5,
+      "top_sources": [
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf",
+        "ClimateFinanceBench_google-2024-environmental-report.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What method does the paper propose for scientific table understanding?",
+      "reference": "table",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.055,
+      "num_docs": 5,
+      "top_sources": [
+        "PaperTab_1909.01958.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "hybrid_no_reranker",
+      "question": "What is the primary business segment of Apple described in the 2022 annual report?",
+      "reference": "iPhone",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.066,
+      "num_docs": 5,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "full_system",
+      "question": "What was Apple's total net sales in fiscal year 2022?",
+      "reference": "394,328",
+      "precision_at_k": 0.3333,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 1.088,
+      "num_docs": 3,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "full_system",
+      "question": "What was Netflix's total revenue in 2020?",
+      "reference": "24,996",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.317,
+      "num_docs": 3,
+      "top_sources": [
+        "FinanceBench_NETFLIX_2020_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "full_system",
+      "question": "What was Walmart's net sales in fiscal year 2017?",
+      "reference": "481,317",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.209,
+      "num_docs": 3,
+      "top_sources": [
+        "FinanceBench_WALMART_2017_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "full_system",
+      "question": "What was Citigroup's total revenues net of interest expense in 2016?",
+      "reference": "77,219",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.194,
+      "num_docs": 3,
+      "top_sources": [
+        "FinQA_C_2016.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "full_system",
+      "question": "What were Apple's services revenue in fiscal year 2022?",
+      "reference": "78,129",
+      "precision_at_k": 0.3333,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5,
+      "hit_at_1": 0.0,
+      "mrr": 0.3333,
+      "latency_sec": 0.181,
+      "num_docs": 3,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "full_system",
+      "question": "What was the net income reported by Netflix in 2020?",
+      "reference": "2,761",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.223,
+      "num_docs": 3,
+      "top_sources": [
+        "FinanceBench_NETFLIX_2020_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "full_system",
+      "question": "What products revenue did Apple report in fiscal year 2022?",
+      "reference": "316,199",
+      "precision_at_k": 0.3333,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.252,
+      "num_docs": 3,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "full_system",
+      "question": "What was the total revenue of Ralph Lauren in 2014?",
+      "reference": "revenue",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.21,
+      "num_docs": 3,
+      "top_sources": [
+        "FinQA_RL_2014.pdf"
+      ],
+      "category": "financial"
+    },
+    {
+      "config": "full_system",
+      "question": "What net zero target year does BP mention in their sustainability report?",
+      "reference": "2050",
+      "precision_at_k": 0.3333,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.164,
+      "num_docs": 3,
+      "top_sources": [
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "full_system",
+      "question": "What carbon neutrality goal does PWC China reference in their ESG report?",
+      "reference": "2060",
+      "precision_at_k": 0.3333,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.5,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.178,
+      "num_docs": 3,
+      "top_sources": [
+        "ClimRetrieve_PWC China ESG Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "full_system",
+      "question": "What sustainability reporting framework does AstraZeneca follow?",
+      "reference": "GRI",
+      "precision_at_k": 0.6667,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.8,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.137,
+      "num_docs": 3,
+      "top_sources": [
+        "ClimRetrieve_AstraZeneca Sustainability Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "full_system",
+      "question": "What environmental objectives does BASF report on in 2023?",
+      "reference": "climate change",
+      "precision_at_k": 0.3333,
+      "recall_at_k": 0.5,
+      "f1_at_k": 0.4,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.241,
+      "num_docs": 3,
+      "top_sources": [
+        "ClimateFinanceBench_BASF_Report_2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "full_system",
+      "question": "What is Google's water goal in their 2024 environmental report?",
+      "reference": "water",
+      "precision_at_k": 0.6667,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.8,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.162,
+      "num_docs": 3,
+      "top_sources": [
+        "ClimateFinanceBench_google-2024-environmental-report.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "full_system",
+      "question": "What renewable energy commitment does Schneider Electric mention?",
+      "reference": "renewable",
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "f1_at_k": 1.0,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.164,
+      "num_docs": 3,
+      "top_sources": [
+        "ClimRetrieve_Schneider Sustainability Report.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "full_system",
+      "question": "What emissions target does AstraZeneca set for 2030?",
+      "reference": "carbon",
+      "precision_at_k": 0.6667,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.8,
+      "hit_at_1": 0.0,
+      "mrr": 0.5,
+      "latency_sec": 0.155,
+      "num_docs": 3,
+      "top_sources": [
+        "ClimRetrieve_AstraZeneca Sustainability Report 2023.pdf"
+      ],
+      "category": "esg"
+    },
+    {
+      "config": "full_system",
+      "question": "What embedding approach does the PaperTab paper propose for table retrieval?",
+      "reference": "BERT",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.183,
+      "num_docs": 3,
+      "top_sources": [
+        "PaperTab_1909.01958.pdf",
+        "PaperTab_1909.00105.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "full_system",
+      "question": "What is the main task addressed in the PaperTab research paper?",
+      "reference": "table",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.178,
+      "num_docs": 3,
+      "top_sources": [
+        "PaperTab_1611.00514.pdf",
+        "ClimateFinanceBench_BASF_Report_2023.pdf",
+        "ClimRetrieve_Schneider Sustainability Report.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "full_system",
+      "question": "What dataset does the climate finance benchmark paper use?",
+      "reference": "climate",
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "f1_at_k": 1.0,
+      "hit_at_1": 1.0,
+      "mrr": 1.0,
+      "latency_sec": 0.165,
+      "num_docs": 3,
+      "top_sources": [
+        "ClimateFinanceBench_bp-sustainability-report-2023.pdf",
+        "ClimateFinanceBench_google-2024-environmental-report.pdf",
+        "FinQA_C_2016.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "full_system",
+      "question": "What method does the paper propose for scientific table understanding?",
+      "reference": "table",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.199,
+      "num_docs": 3,
+      "top_sources": [
+        "PaperTab_1909.01958.pdf"
+      ],
+      "category": "scientific"
+    },
+    {
+      "config": "full_system",
+      "question": "What is the primary business segment of Apple described in the 2022 annual report?",
+      "reference": "iPhone",
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "f1_at_k": 0.0,
+      "hit_at_1": 0.0,
+      "mrr": 0.0,
+      "latency_sec": 0.372,
+      "num_docs": 3,
+      "top_sources": [
+        "FinanceBench_APPLE_2022_10K.pdf"
+      ],
+      "category": "financial"
+    }
+  ]
+}
