@@ -9,6 +9,113 @@
 
 This repository contains the implementation and evaluation framework developed for the MSc thesis:
 
+## Project at a Glance
+
+This repository contains both the **implemented RAG application** and the **experimental evaluation framework** developed for the MSc thesis.
+
+For a quick review:
+
+- **Interactive application:** `app/streamlit_app.py`
+- **Core RAG implementation:** `src/`
+- **Final retrieval configuration:** dense-only FAISS retrieval with `K=10`
+- **Embedding model:** `sentence-transformers/all-mpnet-base-v2`
+- **Generation model:** Gemini 2.5 Flash
+- **Evaluation code:** `evaluation/`
+- **Evaluation outputs:** `data/eval/`
+- **Main application dependencies:** `requirements_main_rag.txt`
+- **Pipeline verification:** `test_pipeline.py`
+
+The repository also contains experimental retrieval components, including BM25, hybrid retrieval, query adaptation, and cross-encoder reranking. These components were investigated during the empirical configuration study. The **final selected retrieval configuration is documented separately** and does not use BM25, hybrid retrieval, or cross-encoder reranking.
+
+## Quick Start
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Siddhi-Banchhode/enterprise-rag-thesis.git
+cd enterprise-rag-thesis
+```
+
+### 2. Create a Python environment
+
+The project was developed and verified with **Python 3.11**.
+
+```bash
+python3.11 -m venv venv
+source venv/bin/activate
+```
+
+On Windows:
+
+```powershell
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install the main application dependencies
+
+```bash
+pip install -r requirements_main_rag.txt
+```
+
+The main RAG implementation uses the following pinned LangChain versions:
+
+```text
+langchain==0.3.0
+langchain-community==0.3.0
+langchain-core==0.3.63
+langchain-google-genai==2.0.0
+langchain-huggingface==0.1.0
+langchain-text-splitters==0.3.8
+```
+
+The complete dependency set is specified in `requirements_main_rag.txt`.
+
+### 4. Configure the Gemini API key
+
+Create a `.env` file in the project root:
+
+```env
+GOOGLE_API_KEY=your_google_api_key
+LLM_TYPE=gemini
+```
+
+API credentials are not included in the repository.
+
+### 5. Run the Streamlit application
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+The application provides an interactive interface for querying the indexed enterprise PDF documents.
+
+> **Note:** The enterprise PDF corpus and generated FAISS index are excluded from GitHub. Therefore, a fresh clone does not contain the thesis-specific document corpus or pre-built index.
+
+### 6. Run the pipeline verification test
+
+```bash
+python test_pipeline.py
+```
+
+This verifies the main RAG pipeline components without requiring the full Streamlit interface.
+
+### 7. Run the evaluation framework
+
+Evaluation scripts are located in:
+
+```text
+evaluation/
+```
+
+Selected evaluation outputs are available under:
+
+```text
+data/eval/
+```
+
+Large benchmark datasets and the enterprise PDF corpus are not distributed with the repository. Reproduction of the full experiments therefore requires obtaining the relevant datasets separately.
+
 > **Design and Empirical Evaluation of a Retrieval-Augmented Generation System for Intelligent Document Querying in Digital Enterprises**
 
 The project investigates Retrieval-Augmented Generation (RAG) for natural-language querying of enterprise PDF documents.
