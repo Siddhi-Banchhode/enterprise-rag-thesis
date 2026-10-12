@@ -76,7 +76,14 @@ The complete dependency set is specified in `requirements_main_rag.txt`.
 Create a `.env` file in the project root:
 
 ```env
+OPENAI_API_KEY=dummy
 GOOGLE_API_KEY=your_google_api_key
+PDF_DIR=data/pdfs
+INDEX_PATH=data/faiss_index
+DATASETS_DIR=data/datasets
+CHUNK_SIZE=2000
+CHUNK_OVERLAP=200
+TOP_K=5
 LLM_TYPE=gemini
 ```
 
@@ -90,7 +97,7 @@ streamlit run app/streamlit_app.py
 
 The application provides an interactive interface for querying the indexed enterprise PDF documents.
 
-> **Note:** The enterprise PDF corpus and generated FAISS index are excluded from GitHub. Therefore, a fresh clone does not contain the thesis-specific document corpus or pre-built index.
+> **Note:** This repository includes the 15-PDF research corpus under `data/pdfs/` and the pre-built FAISS index under `data/faiss_index/`. The index was generated for the corresponding document corpus and embedding configuration. If you modify the corpus or indexing configuration, rebuild the index as needed. A fresh clone includes these tracked files, but successful application startup still depends on the configured environment, dependencies, and API key.
 
 ### 6. Run the pipeline verification test
 
@@ -99,6 +106,24 @@ python test_pipeline.py
 ```
 
 This verifies the main RAG pipeline components without requiring the full Streamlit interface.
+
+## Demo Questions and Reference Answers
+
+The following representative questions illustrate the types of financial and sustainability information covered by the indexed PDF corpus. The answers are reference values for checking the system's responses against the source documents.
+
+| No. | Representative Question | Expected Reference Answer | Source Document |
+|---:|---|---|---|
+| 1 | What was Apple's total net sales in fiscal year 2022? | $394,328 million | Apple 2022 Form 10-K, p. 32 |
+| 2 | What was Netflix's total revenue in 2020? | $24,996 million | Netflix 2020 Form 10-K |
+| 3 | What was Walmart's net sales in fiscal year 2017? | $481,317 million | Walmart 2017 Form 10-K |
+| 4 | What net-zero target year does BP mention? | 2050 | BP Sustainability Report 2023 |
+| 5 | What renewable-energy commitment does Google describe? | 24/7 carbon-free energy by 2030 | Google Environmental Report 2024 |
+
+**How to use these examples:** Submit each question to the local Streamlit application, compare the generated response with the reference answer, and inspect the retrieved evidence. Financial values and sustainability commitments should be interpreted in the context and wording of their source documents.
+
+**Live demo:** The application currently runs locally; a public hosted demo is not available.
+
+
 
 ### 7. Run the evaluation framework
 
